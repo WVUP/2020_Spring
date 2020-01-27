@@ -1,0 +1,57 @@
+html, body {
+    background-color: ghostwhite;
+}
+
+h1 {
+    color: red;
+}
+/* The `.` indicates we are dealing with a class selector */
+/* Apply this css to both classes `text-red` and `danger` */
+.text-red, .danger {
+    color: red !important;
+}
+
+.bold {
+    font-weight: bolder;
+}
+
+.panel {
+    display: inline-block;
+    padding: 10px;
+    height: 200px;
+    width: 400px;
+    border-radius: 20px;
+    border-bottom-right-radius: 0;
+    transition: box-shadow 500ms ease-in;
+}
+
+.panel-blue {
+    background-color: #61aed8;
+}
+
+.panel-orange {
+    background-color: #d87461;
+}
+/* In order to use this an element must have the `panel` class AND the `active` class */
+.panel.active, .panel:hover {
+    box-shadow: 10px 10px 54px 0px rgba(92,69,92,1);
+}
+
+
+th {
+    background-color: skyblue;
+    color: darkblue;
+}
+
+table {
+    border-collapse: collapse
+}
+
+table, th, td {
+    border:1px solid black;
+}
+
+td {
+    text-align: center;
+    height: 150px;
+}

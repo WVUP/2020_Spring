@@ -1,0 +1,127 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: ghostwhite;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+button {
+    font-family: 'Raleway', sans-serif;
+}    
+.background{
+    display: contents;       
+}
+
+header {
+    display: flex;
+    width: 90%;
+    height: 10vh;
+    margin: auto;
+    align-items: center;
+}
+
+.logo-container,.nav-links, .cart{
+    display: flex;
+}
+
+.logo-container{
+    flex: 1;
+}
+.logo{
+    font-weight: 400;
+    margin: 5px;
+}
+nav{
+    flex: 2;
+}
+.nav-links{
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+    align-content: center;
+}
+.nav-link{
+    color: lightcoral;
+    font-size: 18px;
+    text-decoration: none;
+}
+.cart{
+    flex: 1;
+    justify-content: flex-end;
+    opacity: 0%;
+}
+.presentation {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    min-height: 80vh;
+    align-items: center;
+}
+.introduction {
+    flex: 1;
+}
+.intro-text h1{
+    font-size: 55px;
+    font-weight: 500px;
+    background: linear-gradient(to left, #cecee2, #d8584f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.intro-text p{
+    margin-top: 5px;
+    font-size: 30px;
+    color: #585772;
+}
+.intro-text2 p{
+    margin-top: 25px;
+    font-size: 18px;
+    color: #585772;
+}
+.cta{
+    padding: 10px 0px 0px 0px;
+}
+.cta-select{
+    border: 2px solid #c36cbb;
+    background: transparent;
+    color: #c36cbb;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.cta-add{
+    border: 2px solid #c36cbb;
+    background: transparent;
+    color: #c36cbb;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 30px 0px 0px 30px;
+}
+.cover{
+    flex: 1;
+    margin-left: 100px;
+}
+.cover2{
+    position: absolute;
+    padding: 0px 0px 0px 0px;
+    margin-left: 970px;
+    margin-bottom: 100px;
+    box-shadow: 10px 10px 10px black;
+}
+.cover img{
+    height: 60vh;
+    box-shadow: 10px 10px 10px black;  
+}
+
+.trenchcoat {
+    position: absolute;
+    padding: 0px 0px 0px 0px;
+    border: 2px solid #c36cbb;
+    margin-left: 90px;
+    margin-bottom: 100px;   
+}

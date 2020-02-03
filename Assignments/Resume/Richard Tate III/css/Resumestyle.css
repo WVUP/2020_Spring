@@ -1,0 +1,15 @@
+html, body {background-image: url(https://standardflags.com/shop/wp-content/uploads/2013/01/Nylon-American-Flag-closeup-1.jpg);}
+
+header {
+    font-size: 3em; color: black; text-align: center; text-decoration: underline; text-decoration: bold;
+}
+
+h1 {color: black; text-decoration: underline;}
+
+.contents{border-style: dotted; background-color: rgb(107, 248, 248); display: inline-block;}
+
+.info{border-style: double; background-color: lime; position: absolute; top: 0; right: 0;}
+
+nav{position: absolute; right: 0; bottom: 0;}
+
+p {font-size: 1em;}

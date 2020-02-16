@@ -5,6 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sign Up</title>
     <link rel="stylesheet" href="register.css">
+    <script language="JavaScript">
+        function showInput() {
+            document.getElementById('display').innerHTML = 
+                        document.getElementById("email").value += "\n" +=
+                        document.getElementById("user").value += "\n" +=
+                        document.getElementById("password").value += "\n" +=
+                        document.getElementById("fname").value += "\s" +=
+                        document.getElementById("mname").value += "\s" +=
+                        document.getElementById("lname").value += "\n" +=
+                        document.getElementById("homeaddress").value += "\n" +=
+                        document.getElementById("phone").value += "\n" +=
+                        document.getElementById("gender").value += "\n" +=
+                        document.getElementById("birthday").value += "\n";
+                        
+        }
+      </script>
 </head>
 <body>
     <div>
@@ -19,16 +35,23 @@
                 <input type="text" id="user" name="user" placeholder="Please enter your username" required><br><br> 
 
                 <label for="password">Password:</label><br>
-                <input type="password" id="password" name="password" placeholder="Please enter your password" required><br><br>
+                <input type="password" id="password" name="password" placeholder="Please enter your password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required><br><br>
 
                 <label for="fname">First name:</label><br>
-                <input type="text" id="fname" name="fname" placeholder="Please enter your first name" required><br><br>
+                <input type="text" id="fname" name="fname" placeholder="Please enter your first name" pattern="[a-zA-Z]{3,}" required><br><br>
 
                 <label for="lname">Surname:</label><br>
-                <input type="text" id="lname" name="lname" placeholder="Please enter your last name" required><br><br>
+                <input type="text" id="lname" name="lname" placeholder="Please enter your last name" pattern="[a-zA-Z]{3,}" required><br><br>
 
                 <label for="mname">Middle Name:</label><br>
-                <input type="text" id="mname" name="mname" placeholder="Middle name"><br><br>
+                <input type="text" id="mname" name="mname" placeholder="Middle name" pattern="[a-zA-Z]{2,}"><br><br>
+
+                <!-- Physical Address and Phone Number -->
+                <label for="homeaddress">Current Address:</label><br>
+                <input type="text" id="homeaddress" name="homeaddress" placeholder="Please enter your current address" required><br><br>
+
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone" pattern="\([0-9]{3}\)\s[0-9]{3}-[0-9]{4}" placeholder="(###) ###-####" required><br><br>
 
                 <!-- Gender -->
                 <p>Gender:</p>
@@ -44,8 +67,12 @@
 
                 <!-- Date of Birth -->
                 <label for="birthday">Date of Birth:</label>
-                <input type="date" id="birthday" name="birthday">
+                <input type="date" id="birthday" name="birthday"><br><br>
+
+                <!-- Submit Form -->
+                <input type="button" value="Submit" onclick="showInput();">
             </form>
+            <p id="display"></p>
         </div>
     </div>
     

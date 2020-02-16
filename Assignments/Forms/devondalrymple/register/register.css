@@ -1,0 +1,32 @@
+html, 
+body {
+    height: 100%;
+    min-height: 100%;
+    background-color: #011627;
+}
+
+#inner {
+    width: 80%;
+    min-height: 100%;
+    height: 100%;
+    margin: 0 auto;
+    
+  }
+
+h3 {
+    color: #F42C04;
+}
+
+p {
+    color: #FA7921;
+    margin: 0;
+    padding: 0;
+}
+
+label {
+    color: #FA7921;
+}
+
+/* Red, Orange, Yellow, Green */
+/* Resteraunt Form */
+/* Color Scheme: MAASTRICHT BLUE = Background; RED (PIGMENT) = Header; ANDROID GREEN = Choice Background; FERRARI RED = Bold Text; PRINCETON ORANGE = Text; */

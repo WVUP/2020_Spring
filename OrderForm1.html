@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style1.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ricky's Caffe Pick up</title>
+    <style >
+    #grad1 {
+        
+        background-color: red; /* For browsers that do not support gradients */
+        background-image: linear-gradient(to right, yellow , blue);
+    }
+    </style>
+</head>
+<body>
+    <img src="Ricky's Cafe logo.png" alt="Rick's logo" >
+    <div style="color: gray;">
+    <h1 style="border: 2px; color: aqua;" style="background-color: gold;"> Place you caffateria Order.</h1>
+    <form action="Orders">
+        <input type="radio" id="lunch" name="meal" value="Lunch">
+        <label for="lunch">Lunch</label>
+        <input type="radio" id="breakfast" name="meal" value="breakfast">
+        <label for="breakfast">Breakfast</label>
+        <div aria-checked="true"></div>
+        <h3>What kind of food Entre would you like to have?</h3>
+        
+        <select id="Main_Corse" name="Main_Corse">
+            <option value="Sandwitch">Sandwitch</option>
+            <option value="Pizza">Pizza option</option>
+            <option value="Salad">Salad</option>
+        </select>
+        <br>
+
+        <select id="Side_Item" name="Side_Item">
+            <option value="none">None</option>
+            <option value="Chips">Chips</option>
+            <option value="Fries">Fries</option>
+            <option value="Fruit">Fruit</option>
+        </select>
+        <br>
+        <select id="Drink" name="Side_Item">
+            <option value="none">None</option>
+            <option value="fountain drink">Fountain Drink</option>
+            <option value="Milk">Milk</option>
+            <option value="Coffee">Coffee</option>
+            <option value="Tea">Tea</option>
+        </select>
+        <br>
+        <label for="email">Submit your email to track</label>
+        <input type="email" id="email" name="email">
+        <br>
+        <label for="time">Select what time you wish to pick up your order</label>
+        <input type="time">
+        <br>
+        <input type="submit" src="OrderSubmit.html">
+    </div>
+    </form>
+</body>
+</html>

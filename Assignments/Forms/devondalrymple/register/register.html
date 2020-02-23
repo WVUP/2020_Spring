@@ -12,6 +12,37 @@
             
             
             var genderList = document.getElementsByName("gender"); 
+            var toCipher = document.getElementById("password").value;
+            var map = { //QWERTY CIPHER
+                a: 'q', b: 'w', c: 'e',
+                d: 'r', e: 't', f: 'y',
+                g: 'u', h: 'i', i: 'o',
+                j: 'p', k: 'a', l: 's',
+                m: 'd', n: 'f', o: 'g',
+                p: 'h', q: 'j', r: 'k',
+                s: 'l', t: 'z', u: 'x',
+                v: 'c', w: 'v', x: 'b',
+                y: 'n', z: 'm', A: 'Q', 
+                B: 'W', C: 'E',
+                D: 'R', E: 'T', F: 'Y',
+                G: 'U', H: 'I', I: 'O',
+                J: 'P', K: 'A', L: 'S',
+                M: 'D', N: 'F', O: 'G',
+                P: 'H', Q: 'J', R: 'K',
+                S: 'L', T: 'Z', U: 'X',
+                V: 'C', W: 'V', X: 'B',
+                Y: 'N', Z: 'M', 
+                
+            };
+            join
+            text.split('').filter(function(toCipher) {
+                // Does the character exist in the map?
+                return map.hasOwnProperty(toCipher.toLowerCase());
+            }).map(function(toCipher) {
+                // Replace character by value
+                return map[toCipher.toLowerCase()].toUpperCase();
+            }).join();
+            
             
             for(i = 0; i < genderList.length; i++) { 
                 if(genderList[i].checked) {
@@ -19,6 +50,7 @@
                     break;
                 }
             } 
+
             
             
 
@@ -33,6 +65,8 @@
                         "Phone Number: " + document.getElementById("phone").value + "<br>" +
                         "Gender: " + genderType + "<br>" +
                         "Date of Birth: " + document.getElementById("birthday").value + "<br>";
+
+                    
                         
         }
     </script>

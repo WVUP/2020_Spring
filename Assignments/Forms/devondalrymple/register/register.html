@@ -47,29 +47,29 @@
             <form name="Sign-Up">
                 <!-- Usual Information -->
                 <label for="email">Email Address:</label><br>
-                <input type="email" id="email" name="email" placeholder="Enter your email address" required><br><br> 
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required><span class="validate">: * - Must be formatted "email@websitename.domainextension"</span><br><br> 
 
                 <label for="user">Username:</label><br>
-                <input type="text" id="user" name="user" placeholder="Please enter your username" required><br><br> 
+                <input type="text" id="user" name="user" placeholder="Please enter your username" required><span class="validate">: *</span><br><br> 
 
                 <label for="password">Password:</label><br>
-                <input type="password" id="password" name="password" placeholder="Please enter your password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required><br><br>
+                <input type="password" id="password" name="password" placeholder="Please enter your password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required><span class="validate">: * - Must contain a number, symbol, uppercase letter and lowercase letter.  Must be at least eight characters long.</span><br><br>
 
                 <label for="fname">First name:</label><br>
-                <input type="text" id="fname" name="fname" placeholder="Please enter your first name" pattern="[a-zA-Z]{3,}" required><br><br>
+                <input type="text" id="fname" name="fname" placeholder="Please enter your first name" pattern="[a-zA-Z]{3,}" required><span class="validate">: * - Letters only, minimum of three</span><br><br>
 
                 <label for="lname">Surname:</label><br>
-                <input type="text" id="lname" name="lname" placeholder="Please enter your last name" pattern="[a-zA-Z]{3,}" required><br><br>
+                <input type="text" id="lname" name="lname" placeholder="Please enter your last name" pattern="[a-zA-Z]{3,}" required><span class="validate">: * - Letters only, minimum of three</span><br><br>
 
                 <label for="mname">Middle Name:</label><br>
-                <input type="text" id="mname" name="mname" placeholder="Middle name" pattern="[a-zA-Z]{2,}"><br><br>
+                <input type="text" id="mname" name="mname" placeholder="Middle name" pattern="[a-zA-Z]{2,}"><span class="validate">: Not required, but can only contain letters with a minimum of two</span><br><br>
 
                 <!-- Physical Address and Phone Number -->
                 <label for="homeaddress">Current Address:</label><br>
-                <input type="text" id="homeaddress" name="homeaddress" placeholder="Please enter your current address" required><br><br>
+                <input type="text" id="homeaddress" name="homeaddress" placeholder="Please enter your current address" required><span class="validate">: * - Please use the format "Street, City, State"</span><br><br>
 
                 <label for="phone">Phone Number:</label><br>
-                <input type="tel" id="phone" name="phone" pattern="\([0-9]{3}\)\s[0-9]{3}-[0-9]{4}" placeholder="(###) ###-####" required><br><br>
+                <input type="tel" id="phone" name="phone" pattern="\([0-9]{3}\)\s[0-9]{3}-[0-9]{4}" placeholder="(###) ###-####" required><span class="validate">: * - Use the format "(###) ###-####"</span><br><br>
 
                 <!-- Gender -->
                 <p>Gender:</p>
@@ -85,7 +85,7 @@
 
                 <!-- Date of Birth -->
                 <label for="birthday">Date of Birth:</label>
-                <input type="date" id="birthday" name="birthday" required><br><br>
+                <input type="date" id="birthday" name="birthday" required><span class="validate">: * - Type your date of birth or use the drop down arrow</span><br><br>
 
                 <!-- Submit Form -->
                 <input type="button" value="Submit" onclick="showInput();">

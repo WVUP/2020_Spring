@@ -13,6 +13,10 @@ body {
     
   }
 
+.validate {
+    color: #9bc53d;
+}
+
 h3 {
     color: #F42C04;
 }

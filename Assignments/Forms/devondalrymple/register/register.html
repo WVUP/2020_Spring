@@ -7,17 +7,36 @@
     <link rel="stylesheet" href="register.css">
     <script language="JavaScript">
         function showInput() {
+            var genderType;
+            function displayRadioValue() { 
+                document.getElementById("result").innerHTML = ""; 
+                var ele = document.getElementsByTagName('input'); 
+              
+                for(i = 0; i < ele.length; i++) { 
+                  
+                    if(ele[i].type="radio") { 
+                  
+                        if(ele[i].checked) {
+
+                            document.getElementById("result").innerHTML 
+                                    += ele[i].name + " Value: " 
+                                    + ele[i].value + "<br>"; 
+                        }
+                    } 
+                } 
+            } 
+            
             document.getElementById('display').innerHTML = 
-                        document.getElementById("email").value += "\n" +=
-                        document.getElementById("user").value += "\n" +=
-                        document.getElementById("password").value += "\n" +=
-                        document.getElementById("fname").value += "\s" +=
-                        document.getElementById("mname").value += "\s" +=
-                        document.getElementById("lname").value += "\n" +=
-                        document.getElementById("homeaddress").value += "\n" +=
-                        document.getElementById("phone").value += "\n" +=
-                        document.getElementById("gender").value += "\n" +=
-                        document.getElementById("birthday").value += "\n";
+                        document.getElementById("email").value + "<br>" +
+                        document.getElementById("user").value + "<br>" +
+                        document.getElementById("password").value + "<br>" +
+                        document.getElementById("fname").value + "\s" +
+                        document.getElementById("mname").value + "\s" +
+                        document.getElementById("lname").value + "<br>" +
+                        document.getElementById("homeaddress").value + "<br>" +
+                        document.getElementById("phone").value + "<br>" +
+                        document.getElementById("gender").value + "<br>" +
+                        document.getElementById("birthday").value + "<br>";
                         
         }
       </script>
@@ -56,14 +75,14 @@
                 <!-- Gender -->
                 <p>Gender:</p>
                 <label for="male">Male:</label>
-                <input type="radio" id="male" name="gender" value="male"><br>
+                <input type="radio" id="gender" name="gender" value="male"><br>
                 
                 <label for="female">Female:</label>
-                <input type="radio" id="female" name="gender" value="female"><br>
+                <input type="radio" id="gender" name="gender" value="female"><br>
                 
                 
                 <label for="other">Other:</label>
-                <input type="radio" id="other" name="gender" value="other"><br><br>
+                <input type="radio" id="gender" name="gender" value="other"><br><br>
 
                 <!-- Date of Birth -->
                 <label for="birthday">Date of Birth:</label>

@@ -10,17 +10,17 @@
         function showInput() {
             // https://www.geeksforgeeks.org/how-to-get-value-of-selected-radio-button-using-javascript/
             
-            function displayRadioValue() { 
-                var genderList = document.getElementsByName("gender"); 
-                
-                for(i = 0; i < genderList.length; i++) { 
-                    if(genderList[i].checked) {
-                        genderType = genderList[i].value;
-                        break;
-                    }
-                } 
-                alert(genderList);
+            
+            var genderList = document.getElementsByName("gender"); 
+            
+            for(i = 0; i < genderList.length; i++) { 
+                if(genderList[i].checked) {
+                    genderType = genderList[i].value;
+                    break;
+                }
             } 
+            alert(genderList);
+            
 
             document.getElementById('display').innerHTML = 
                         "Email: " + document.getElementById("email").value + "<br>" +

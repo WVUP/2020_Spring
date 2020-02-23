@@ -6,16 +6,20 @@
     <title>Sign Up</title>
     <link rel="stylesheet" href="register.css">
     <script language="JavaScript">
+        var genderType;
         function showInput() {
             // https://www.geeksforgeeks.org/how-to-get-value-of-selected-radio-button-using-javascript/
-            var genderType;
+            
             function displayRadioValue() { 
-                var genderList = document.getElementsByName('gender'); 
+                var genderList = document.getElementsByName("gender"); 
                 
                 for(i = 0; i < genderList.length; i++) { 
-                    if(genderList[i].checked) 
-                    genderType = genderList[i].value;
+                    if(genderList[i].checked) {
+                        genderType = genderList[i].value;
+                        break;
+                    }
                 } 
+                alert(genderList);
             } 
 
             document.getElementById('display').innerHTML = 
@@ -27,11 +31,11 @@
                         document.getElementById("lname").value + "<br>" +
                         "Home Address: " + document.getElementById("homeaddress").value + "<br>" +
                         "Phone Number: " + document.getElementById("phone").value + "<br>" +
-                        "Gender: " + document.getElementById("gender").value + "<br>" +
+                        "Gender: " + genderType + "<br>" +
                         "Date of Birth: " + document.getElementById("birthday").value + "<br>";
                         
         }
-      </script>
+    </script>
 </head>
 <body>
     <div>
@@ -78,7 +82,7 @@
 
                 <!-- Date of Birth -->
                 <label for="birthday">Date of Birth:</label>
-                <input type="date" id="birthday" name="birthday"><br><br>
+                <input type="date" id="birthday" name="birthday" required><br><br>
 
                 <!-- Submit Form -->
                 <input type="button" value="Submit" onclick="showInput();">

@@ -1,0 +1,103 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style1.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ricky's Caffe Pick up</title>
+    <style >
+    #grad1 {
+        
+        background-color: red; /* For browsers that do not support gradients */
+        background-image: linear-gradient(to right, yellow , blue);
+    }
+    </style>
+</head>
+<body style="background-color: gold;">
+    <div style="border-radius: 10px; padding-left: 30px">
+        <img src="Ricky's Cafe logo.png" alt="Rick's logo" >
+    </div>
+    <div>
+    <h1 style="border: 2px;" style="background-color: lightgray; border-radius: 20px;"> Place Your Cafeteria Order.</h1>
+    <div style="width: 300px; " class="shadowbox">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Repellendus quae provident animi, officiis nobis sit rerum quis ad, 
+        harum veritatis ex maiores, itaque nesciunt enim tenetur. 
+        Reiciendis iusto harum aspernatur.</p>
+    </div>
+    <form action="Orders" style="background-color: lightskyblue; border-radius: 10px; width: 500px;">
+        <input type="radio" id="lunch" name="meal" value="Lunch" >
+        <label for="lunch">Lunch</label>
+        <input type="radio" id="breakfast" name="meal" value="breakfast">
+        <label for="breakfast">Breakfast</label>
+        
+        <div aria-label="Lunch" class="shadowbox" style="background-color: lightgoldenrodyellow; width: 400px; border-radius: 1ch; padding-left: 30" >
+        <h3 style="padding-left: 55px;">Place your lunch order</h3>
+        
+        <select id="Main_Corse" name="Main_Corse" style="padding-left: 30px;">
+            <option value="Sandwitch">Sandwitch</option>
+            <option value="Pizza">Pizza option</option>
+            <option value="Salad">Salad</option>
+            <label for="Main_Corse">Entre</label>
+        </select>
+        <br>
+
+        <select id="Side_Item" name="Side_Item" aria-label="Side Item" style="padding-left: 30px;">
+            <option value="none">None</option>
+            <option value="Chips">Chips</option>
+            <option value="Fries">Fries</option>
+            <option value="Fruit">Fruit</option>
+        </select>
+        <br>
+        <select id="Drink" name="Side_Item" style="padding-left: 30px;">
+            <option value="none">None</option>
+            <option value="fountain drink">Fountain Drink</option>
+            <option value="Milk">Milk</option>
+            <option value="Coffee">Coffee</option>
+            <option value="Tea">Tea</option>
+        </select>
+        <br>
+        </div>
+
+        <div aria-label="Breakfast" class="shadowbox" style="background-color: lightgoldenrodyellow; width: 400px; border-radius: 1ch; padding-left: 30 " >
+            <h3 style="padding-left: 55px;">Place your Breakfast order</h3>
+            
+            <select id="Main_Corse" name="Main_Corse" style="padding-left: 30px;">
+                <option value="Burrito">Burrito</option>
+                <option value="Eggs">Pizza option</option>
+                <option value="Waffles">Waffles</option>
+            </select>
+            <br>
+            <select id="Breakfast_Side" name="Breakfast_Side" aria-label="Side Item" style="padding-left: 30px;">
+                <option value="none">None</option>
+                <option value="Contry Fires">Chips</option>
+                <option value="hasbrowns">Fries</option>
+                <option value="Fruit">Fruit</option>
+            </select>
+            <br>
+            <select id="Drink" name="Side_Item" style="padding-left: 30px;">
+                <option value="none">None</option>
+                <option value="fountain drink">Fountain Drink</option>
+                <option value="Milk">Milk</option>
+                <option value="Coffee">Coffee</option>
+                <option value="Tea">Tea</option>
+            <br>
+            </select>
+            <br>
+            <input type="radio" id="Gravy" name="gravy" value="gravy">
+            <label for="Gravy">Gravy</label>
+            <input type="radio" id="NoGravy" name="gravy" value="gravy">
+            <label for="breakfast">Sadness</label>
+            </select>
+            </div>
+        <label for="email">Submit your email to track</label>
+        <input type="email" id="email" name="email">
+        
+        <br>
+        <label for="time">Select what time you wish to pick up your order</label>
+        <input type="time">
+        <br>
+        <input type="submit" src="http:\\OrderSubmit.html" style="border-radius: 20px;">
+    </div>
+    </form>
+</body>
+</html>

@@ -27,8 +27,8 @@
                         "Email: " + document.getElementById("email").value + "<br>" +
                         "Username: " + document.getElementById("user").value + "<br>" +
                         "Password: " + document.getElementById("password").value + "<br>" +
-                        "Name: " + document.getElementById("fname").value + "\s" +
-                        document.getElementById("mname").value + "\s" +
+                        "Name: " + document.getElementById("fname").value + "&nbsp;" +
+                        document.getElementById("mname").value + "&nbsp;" +
                         document.getElementById("lname").value + "<br>" +
                         "Home Address: " + document.getElementById("homeaddress").value + "<br>" +
                         "Phone Number: " + document.getElementById("phone").value + "<br>" +
@@ -85,7 +85,7 @@
 
                 <!-- Date of Birth -->
                 <label for="birthday">Date of Birth:</label>
-                <input type="date" id="birthday" name="birthday" required><span class="validate">: *Required - Type your date of birth or use the drop down arrow</span><br><br>
+                <input type="date" id="birthday" name="birthday" max="2002-2-24" required><span class="validate">: *Required - Type your date of birth or use the drop down arrow</span><br><br>
 
                 <!-- Submit Form -->
                 <input type="button" value="Submit" onclick="showInput();">

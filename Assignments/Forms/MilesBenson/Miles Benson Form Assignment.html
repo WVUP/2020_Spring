@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sociopath Test</title>
+</head>
+<body style="background-image: linear-gradient(darkred, black);">
+    
+<div class="TitleBlock">
+Am I a Sociopath?
+</div>
+
+<hr>
+
+<form name="form" class="Form">
+    <br>
+    <label for="fName">First Name: </label>
+    <input type="text" id="fName" name="fName">
+    <label for="lName">Last Name: </label>
+    <input type="text" id="lName" name="lName">
+    <br>
+
+    <hr>
+
+    <h3>Are you introverted, or extraverted?</h3>
+
+        <table>
+            <tr>
+                <td><input type="radio" name="vert" value="introverted" id="vert">Introverted</td>
+                <td><input type="radio" name="vert" value="extraverted" id="vert">Extraverted</td>
+            </tr>
+        </table>
+
+    <hr>
+
+    <h3>Please check one</h3>
+
+        <table>
+            <tr>
+                <td><input type="radio" id="attr" name="attr" value="doesn't like people" >I don't like people</td>
+            </tr>
+            <tr>
+                <td><input type="radio" id="attr" name="attr" value="gets uncomfortable in social situations" >I get uncomfortable in social situations</td>
+            </tr>
+            <tr>
+                <td><input type="radio" id="attr" name="attr" value="prefers to stay inside" >I would prefer to stay inside</td>
+            </tr>
+            <tr>
+                <td><input type="radio" id="attr" name="attr" value="doesn't understand human emotions" >I don't understand emotional people</td>
+            </tr>
+            <tr>
+                <td><input type="radio" id="attr" name="attr" value="hates sensitivity" >I wish people would be less sensitive</td>
+            </tr>
+        </table>
+
+    <hr>
+
+    
+</form>  
+
+<br>
+
+<button onclick="compile()">Am I a Sociopath?</button>
+
+<br>
+
+<div class="Display" id="data retrieval"></div>
+
+</div>
+<script src="form.js"></script>
+<link rel="stylesheet" href="site.css">
+</body>
+</html>

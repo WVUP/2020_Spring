@@ -1,0 +1,116 @@
+html, body {
+    background-color: white;
+}
+
+h1 {
+    color: black;
+}
+/* The `.` indicates we are dealing with a class selector */
+/* Apply this css to both classes `text-red` and `danger` */
+.text-red, .danger {
+    color: red !important;
+}
+
+.bold {
+    font-weight: bolder;
+}
+
+.panel {
+    display: inline-block;
+    padding: 10px;
+    height: 200px;
+    width: 400px;
+    border-radius: 20px;
+    border-bottom-right-radius: 0;
+    transition: box-shadow 500ms ease-in;
+}
+
+.panel-blue {
+    background-color: #61aed8;
+}
+
+.panel-orange {
+    background-color: #d87461;
+}
+/* In order to use this an element must have the `panel` class AND the `active` class */
+.panel.active, .panel:hover {
+    box-shadow: 10px 10px 54px 0px rgba(92,69,92,1);
+}
+
+table, th, td {
+    border:1px solid rgb(88, 88, 88);
+    width: 90px;
+    height: 35px;
+}
+
+.rotateimg90
+{
+    transform: rotate(90deg);
+}
+.img
+{
+    float: left;
+}
+.wallOne {
+    height: 85%;
+    width: 30%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 5px;
+    border-radius: 25px;
+  }
+  .wallTwo {
+    height: 100%;
+    width: 70%;
+    position: absolute;
+    z-index: 0;
+    top: -10;
+    overflow-x: hidden;
+    padding-top: 0px;
+  }
+  
+  /* Control the left side */
+  .left {
+    left: 0;
+    background-color: rgb(236, 70, 28);
+  }
+  
+  /* Control the right side */
+  .right {
+    right: 0;
+    background-color: rgb(255, 255, 255) ;
+  }
+  
+  /* If you want the content centered horizontally and vertically */
+  .centered {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  /* Style the image inside the centered container, if needed */
+  .centered img {
+    width: 450px;
+  }
+  .tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-84g4{font-size:24px;text-align:left;vertical-align:top}
+
+.nowrap {
+    white-space: nowrap ;
+  }
+  .button {
+    background-color: rgb(21, 158, 78);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }

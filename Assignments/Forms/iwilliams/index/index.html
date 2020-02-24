@@ -1,0 +1,94 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey</title>
+    
+</head>
+<body style="background-color: rgb(163, 198, 231);">
+    <div style="background-color: white;">
+    <h1 id="my-header">Which Games do CS 129-1 Play?</h1>
+
+    <form name="myForm">
+        <h3>First Name:</h3>
+        <input onkeydown="youTyped()" type="text" placeholder="First Name" name="firstName" required>
+        <h3>Last Name:</h3>
+        <input onkeydown="youTyped()" type="text" placeholder="Last Name" name="lastName" required>
+        <h3>Email:</h3>
+        <input onkeydown="youTyped()" type="email" placeholder="Email" name="email" required>
+    <span id="preview"></span>
+    <span id="preview2"></span>
+    <span id="preview3"></span>
+    <span id="preview4"></span>
+        <Br>
+        </Br>
+        <h3>
+    Choose your favorite board game
+    </h3>
+    <br>
+        <input type="radio" name="boardgame" value="chess">Chess
+        <br>
+        <input type="radio" name="boardgame" value="clue">Clue
+        <br>
+        <input type="radio" name="boardgame" value="risk">Risk
+        <br>
+        <input type="radio" name="boardgame" value="checkers">Checkers
+        <br>
+        <input type="radio" name="boardgame" value="scrabble">Scrabble
+        <br>
+        <input type="radio" name="boardgame" value="jenja">Jenja
+        <br>
+        <input type="radio" name="boardgame" value="go">Go
+        <br>
+        <input type="radio" name="boardgame" value="monopoly">Monopoly
+
+    
+    <Br>
+    </Br>
+    <h3>
+    Choose your favorite tabletop games
+    </h3>
+    <br>
+        <input type="radio" name="tabletopgames" value="dungeon and dragon 5e">Dungeon and Dragon 5e
+        <input type="radio" name="tabletopgames" value="pathfinder">Pathfinder
+        <input type="radio" name="tabletopgames" value="dungeon and dragon 3.5e">Dungeon and Dragon 3.5e
+        <input type="radio" name="tabletopgames" value="star trek adventures">Star Trek Adventures
+        <input type="radio" name="tabletopgames" value="vampire masquerade">Vampire Masquerade
+
+        <br>
+        <br>
+        <h3>
+        Write your favorite Video Game:
+        </h3>
+        <br>
+        <input type="game" placeholder="Video Game" name="game">
+
+        <br><br>
+        Favorite Sport is
+        <br>
+        <input type="radio" name="sports" value="swim">Swim
+        <br>
+        <input type="radio" name="sports" value="baseball">Baseball
+        <br>
+        <input type="radio" name="sports" value="soccer">Soccer
+        <br>
+        <input type="radio" name="sports" value="basketball">Basketball
+        <br>
+        <input type="radio" name="sports" value="track">Track
+        <br>
+        <input type="radio" name="sports" value="bowling">Bowling
+        <br>
+        <input type="radio" name="sports" value="golf">Golf
+        <br>
+        <input type="radio" name="sports" value="cheerleading">Cheerleading
+        <br>
+        <br>
+        <input type="button" onclick="survey()" value="Submit">
+
+    </form>
+</div>
+    <script src="my.js"></script>
+    <p id="display"></p>
+</body>
+</html>

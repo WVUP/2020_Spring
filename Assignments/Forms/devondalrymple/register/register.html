@@ -6,21 +6,39 @@
     <title>Sign Up</title>
     <link rel="stylesheet" href="register.css">
     <script language="JavaScript">
+        var genderType;
         function showInput() {
+            // https://www.geeksforgeeks.org/how-to-get-value-of-selected-radio-button-using-javascript/
+            
+            
+            var genderList = document.getElementsByName("gender"); 
+            
+            for(i = 0; i < genderList.length; i++) { 
+                if(genderList[i].checked) {
+                    genderType = genderList[i].value;
+                    break;
+                }
+            } 
+
+            
+            
+
             document.getElementById('display').innerHTML = 
-                        document.getElementById("email").value += "\n" +=
-                        document.getElementById("user").value += "\n" +=
-                        document.getElementById("password").value += "\n" +=
-                        document.getElementById("fname").value += "\s" +=
-                        document.getElementById("mname").value += "\s" +=
-                        document.getElementById("lname").value += "\n" +=
-                        document.getElementById("homeaddress").value += "\n" +=
-                        document.getElementById("phone").value += "\n" +=
-                        document.getElementById("gender").value += "\n" +=
-                        document.getElementById("birthday").value += "\n";
+                        "Email: " + document.getElementById("email").value + "<br>" +
+                        "Username: " + document.getElementById("user").value + "<br>" +
+                        "Password: " + document.getElementById("password").value + "<br>" +
+                        "Name: " + document.getElementById("fname").value + "&nbsp;" +
+                        document.getElementById("mname").value + "&nbsp;" +
+                        document.getElementById("lname").value + "<br>" +
+                        "Home Address: " + document.getElementById("homeaddress").value + "<br>" +
+                        "Phone Number: " + document.getElementById("phone").value + "<br>" +
+                        "Gender: " + genderType + "<br>" +
+                        "Date of Birth: " + document.getElementById("birthday").value + "<br>";
+
+                    
                         
         }
-      </script>
+    </script>
 </head>
 <body>
     <div>
@@ -29,45 +47,45 @@
             <form name="Sign-Up">
                 <!-- Usual Information -->
                 <label for="email">Email Address:</label><br>
-                <input type="email" id="email" name="email" placeholder="Enter your email address" required><br><br> 
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required><span class="validate">: *Required - Must be formatted "email@websitename.domainextension"</span><br><br> 
 
                 <label for="user">Username:</label><br>
-                <input type="text" id="user" name="user" placeholder="Please enter your username" required><br><br> 
+                <input type="text" id="user" name="user" placeholder="Please enter your username" required><span class="validate">: *Required</span><br><br> 
 
                 <label for="password">Password:</label><br>
-                <input type="password" id="password" name="password" placeholder="Please enter your password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required><br><br>
+                <input type="password" id="password" name="password" placeholder="Please enter your password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required><span class="validate">: *Required - Must contain a number, symbol, uppercase letter and lowercase letter.  Must be at least eight characters long.</span><br><br>
 
                 <label for="fname">First name:</label><br>
-                <input type="text" id="fname" name="fname" placeholder="Please enter your first name" pattern="[a-zA-Z]{3,}" required><br><br>
+                <input type="text" id="fname" name="fname" placeholder="Please enter your first name" pattern="[a-zA-Z]{3,}" required><span class="validate">: *Required - Letters only, minimum of three</span><br><br>
 
                 <label for="lname">Surname:</label><br>
-                <input type="text" id="lname" name="lname" placeholder="Please enter your last name" pattern="[a-zA-Z]{3,}" required><br><br>
+                <input type="text" id="lname" name="lname" placeholder="Please enter your last name" pattern="[a-zA-Z]{3,}" required><span class="validate">: *Required - Letters only, minimum of three</span><br><br>
 
                 <label for="mname">Middle Name:</label><br>
-                <input type="text" id="mname" name="mname" placeholder="Middle name" pattern="[a-zA-Z]{2,}"><br><br>
+                <input type="text" id="mname" name="mname" placeholder="Middle name" pattern="[a-zA-Z]{2,}"><span class="validate">: Not Required - but can only contain letters with a minimum of two</span><br><br>
 
                 <!-- Physical Address and Phone Number -->
                 <label for="homeaddress">Current Address:</label><br>
-                <input type="text" id="homeaddress" name="homeaddress" placeholder="Please enter your current address" required><br><br>
+                <input type="text" id="homeaddress" name="homeaddress" placeholder="Please enter your current address" required><span class="validate">: *Required - Please use the format "Street, City, State"</span><br><br>
 
                 <label for="phone">Phone Number:</label><br>
-                <input type="tel" id="phone" name="phone" pattern="\([0-9]{3}\)\s[0-9]{3}-[0-9]{4}" placeholder="(###) ###-####" required><br><br>
+                <input type="tel" id="phone" name="phone" pattern="\([0-9]{3}\)\s[0-9]{3}-[0-9]{4}" placeholder="(###) ###-####" required><span class="validate">: *Required - Use the format "(###) ###-####"</span><br><br>
 
                 <!-- Gender -->
                 <p>Gender:</p>
                 <label for="male">Male:</label>
-                <input type="radio" id="male" name="gender" value="male"><br>
+                <input type="radio" id="gender" name="gender" value="male"><br>
                 
                 <label for="female">Female:</label>
-                <input type="radio" id="female" name="gender" value="female"><br>
+                <input type="radio" id="gender" name="gender" value="female"><br>
                 
                 
                 <label for="other">Other:</label>
-                <input type="radio" id="other" name="gender" value="other"><br><br>
+                <input type="radio" id="gender" name="gender" value="other"><br><br>
 
                 <!-- Date of Birth -->
                 <label for="birthday">Date of Birth:</label>
-                <input type="date" id="birthday" name="birthday"><br><br>
+                <input type="date" id="birthday" name="birthday" max="2002-2-24" required><span class="validate">: *Required - Type your date of birth or use the drop down arrow</span><br><br>
 
                 <!-- Submit Form -->
                 <input type="button" value="Submit" onclick="showInput();">

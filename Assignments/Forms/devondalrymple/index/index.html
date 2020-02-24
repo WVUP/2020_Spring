@@ -11,14 +11,43 @@
         <p style="font-size: 4em; color: white; vertical-align: middle; display: inline-block;">Welcome to WeThePizza</p>
         <div class="header-right">
           <a href="../register/register.html">Sign Up</a>
-          <a href="../education/education.html">Login</a>
+          <a href="../index/index.html">Login</a>
         </div>
       </div>
     <div>
         <div id="inner">
             <h3 style="text-align: center;">Sign up now and get 30% off your first purchase</h3>
+            <h3 style="text-align: center;">WIP will be completed in a later assignment.  For the initial structure of a pizza resteraunt site.</h3>
+            <div>
+                <!-- https://www.w3schools.com/w3css/w3css_slideshow.asp -->
+                <img class="mySlides" src="../res/Cheese.jpg" style="width:400px; height:400px;"> 
+                <img class="mySlides" src="../res/Meat-lovers-pizza.jpg" style="width:400px; height:400px">
+                <img class="mySlides" src="../res/Pepperoni.jpg" style="width:400px; height:400px">
+                <img class="mySlides" src="../res/supreme-pizza.jpg" style="width:400px; height:400px">
+              
+                <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+              </div>
         </div>
     </div>
-    
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+        showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+        }
+        x[slideIndex-1].style.display = "block";  
+        }
+    </script>
 </body>
 </html>

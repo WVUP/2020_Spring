@@ -21,14 +21,14 @@
 }
 .loginForm {
     position: absolute;
-    top: 30%;
+    top: 25%;
     right: 40%;
     width: 20%;
     margin: auto;
     border: 1px solid black;
     border-radius: 25px;
     box-shadow: 2px 2px 2px black;
-    background-color: rgb(221, 211, 211);
+    background-color: rgb(170, 187, 214);
 }
 /* Bordered form */
 form {

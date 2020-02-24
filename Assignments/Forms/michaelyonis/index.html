@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create an Account</title>
+</head>
+<body style="background-color: aqua;">
+    <h1 id="my-header">Create an Account</h1>
+    <form action="#" name="myForm" action="/action_page.php">
+        <input type="text" placeholder="First Name" name="first-name" required>
+        <input type="text" placeholder="Last Name" name="last-name" required>
+        <br><br>
+        <label for="email">Email: </label>
+        <input onkeydown="youTyped()" type="email" placeholder="xyz@company.com" name="email" required>
+        <span id="preview"></span>
+        <br><br>
+        <label for="password">Password: </label>
+        <input type="password" placeholder="Enter password" name="password" required>
+        <br><br>
+        
+        Choose a subscription package
+        <input type="radio" name="subscription" value="month">Monthly
+        <input type="radio" name="subscription" value="6month">Every 6 months
+        <input type="radio" name="subscription" value="year">Annually
+
+        <br><br>
+
+        Choose a newsletter
+        <input type="checkbox" name="snake" value="snake">Snake Newsletter
+        <input type="checkbox" name="ballPython" value="ballPython">Ball Python Newsletter
+        <input type="checkbox" name="none" value="none">No Newsletter
+
+        <br><br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+    <script src="javascript/account.js"></script>
+</body>
+</html>

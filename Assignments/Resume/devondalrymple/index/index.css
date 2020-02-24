@@ -1,0 +1,94 @@
+body {
+    /* https://cssgradient.io/ */
+    background: rgb(0,255,81);
+    background: linear-gradient(180deg, rgba(0,255,81,1) 0%, rgba(0,189,136,1) 100%);
+}
+/* Style the header with a grey background and some padding */
+/* https://www.cssmatic.com/border-radius */
+.header {
+    overflow: hidden;
+    border-radius: 60px 60px 140px 140px;
+    -moz-border-radius: 60px 60px 140px 140px;
+    -webkit-border-radius: 60px 60px 140px 140px;
+    border: 0px solid #000000;
+    background-color: #f1f1f1;
+    padding: 20px 10px;
+  }
+  
+  /* https://www.w3schools.com/howto/howto_css_responsive_header.asp */
+  /* Style the header links */
+  .header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+  }
+  
+  /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+  .header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  /* Change the background color on mouse-over */
+  .header a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Style the active/current link*/
+  .header a.active {
+    background-color: dodgerblue;
+    color: white;
+  }
+  
+  /* Float the link section to the right */
+  .header-right {
+    float: right;
+  }
+  
+  /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+
+.centerBox {
+    height: 500px;
+    width: 600px;
+    background: white;
+
+    position: fixed;
+    top: 45%;
+    left: 55%;
+    margin-top: -100px;
+    margin-left: -200px;
+}
+
+.centerImg {
+    height: 500px;
+    width: 600px;
+    background: white;
+
+    position: fixed;
+    top: 45%;
+    left: 35%;
+    margin-top: -100px;
+    margin-left: -200px;
+}
+
+img {
+    height: 400px;
+    width: 400px;
+}
+
+/* https://codepen.io/cbracco/pen/zekgx */
+.footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #efefef;
+    text-align: center;
+}

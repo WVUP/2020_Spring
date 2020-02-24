@@ -1,0 +1,17 @@
+html, body{
+    background-color: khaki;
+}
+nav{
+    text-align: center;
+}
+h1{
+    text-align: center;
+}
+#imageProgramming{
+    text-align: center;
+}
+p{    
+    font-weight: bolder;
+    font-style: italic;
+}
+

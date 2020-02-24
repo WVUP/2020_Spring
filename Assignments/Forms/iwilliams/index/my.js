@@ -25,8 +25,8 @@ function youTyped(){
 }
     function survey(){
         console.log(`Your First Name: ${myForm.firstName.value}`);
-        console.log(`Your Input: ${myForm.lastName.value}`);
-        console.log(`Your Input: ${myForm.email.value}`);
+        console.log(`Your Last Name: ${myForm.lastName.value}`);
+        console.log(`Your Email: ${myForm.email.value}`);
         console.log(`Your Input: ${myForm.boardgame.value}`);
         console.log(`Your Input: ${myForm.tabletopgames.value}`);
         console.log(`Your Input: ${myForm.game.value}`);

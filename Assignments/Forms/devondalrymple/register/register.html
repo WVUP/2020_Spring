@@ -89,15 +89,18 @@
                 <input type="date" id="birthday" name="birthday" max="2002-2-24" required><span class="validate">: *Required - Type your date of birth or use the drop down arrow</span><br><br>
 
                 <!-- Submit Form -->
-                <input type="submit" value="Submit" onclick="e.preventDefault();showInput();">
+                <input type="submit" value="Submit" onclick="showInput();">
             </form>
             <p id="display"></p>
         </div>
     </div>
     <script language="JavaScript">
-        $("Sign-Up").submit(function (e) {
-            e.preventDefault(); //prevents the default action
-        })
+        window.onload=function(){
+            document.getElementById("Sign-Up").addEventListener("click", function(event){
+                event.preventDefault()
+            });
+        }
+        
     </script>
 </body>
 </html>

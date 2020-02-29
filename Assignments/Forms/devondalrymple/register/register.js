@@ -29,11 +29,3 @@ function showInput() {
 }
 
 // https://www.codespeedy.com/stop-form-submission-using-javascript-preventdefault-event-method/
-function handleSubmit() {
-    event.preventDefault()
-    showInput();
-}
-// document.getElementById("submit-btn").addEventListener("click", function(event){
-//     event.preventDefault()
-//     showInput();
-// });

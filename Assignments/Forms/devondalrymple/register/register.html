@@ -11,7 +11,7 @@
     <div>
         <div id="inner">
             <h3 style="text-align: center; font-size: 3em;">Sign Up</h3>
-            <form name="Sign-Up">
+            <form name="Sign-Up" id="SignUp">
                 <!-- Usual Information -->
                 <label for="email">Email Address:</label><br>
                 <input type="email" id="email" name="email" placeholder="Enter your email address" required><span class="validate">: *Required - Must be formatted "email@websitename.domainextension"</span><br><br> 
@@ -55,16 +55,15 @@
                 <input type="date" id="birthday" name="birthday" max="2002-2-24" required><span class="validate">: *Required - Type your date of birth or use the drop down arrow</span><br><br>
 
                 <!-- Submit Form -->
-                <input type="submit" value="Submit" id="submit-btn">
+                <input type="submit" value="Submit" id="submit-btn" onsubmit="showInput();">
             </form>
             <p id="display"></p>
         </div>
     </div>
     <script language="JavaScript">
         // https://www.codespeedy.com/stop-form-submission-using-javascript-preventdefault-event-method/
-        document.getElementById("submit-btn").addEventListener("click", function(event){
-            event.preventDefault()
-            showInput();
+        document.getElementById("SignUp").addEventListener("click", function(event){
+            event.preventDefault();
         });
         
     

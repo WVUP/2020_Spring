@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body bgcolor="#39CCCC">
+<script language="JavaScript">
+    function showInput() {
+        document.getElementById('display').innerHTML = document.getElementById("user_input").value;
+    }
+</script>
+   <center><h1>My Terrible unfunny survey</h1></center>
+   <br>
+   <br>
+   <center><form >
+       
+       Enter your name: <input  type="text" name="First name" value=" First name" id="firstName" required>
+       <input type="text" name="Last name" value="Last name" id="lastName" >
+       <br>
+       female: <input type="radio" name="sex" id="sex" required>
+       male: <input type="radio" name="sex" id="sex" required >
+       other: <input type="radio" name="sex" id="sex" required>
+       <br>
+       <br>
+       age:
+       <select name="age" id="age" required>
+        <option value=""></option>   
+        <option value="">how are you using a computer(0-5 years)</option>
+           <option value="">should probably be playing roblox instead(5-10 years)</option>
+           <option value="">edgy middle schooler(10-15 years)</option>
+           <option value="">highschool/college kid who probably vapes(15-20 years)</option>
+           <option value="">big boi(20-40 years)</option>
+           <option value="">boomer(40-60 years)</option>
+           <option value="">how are you using a computer(60-100 years)</option>
+       </select>
+       <br>
+       hobby:
+       <select required name="hobby" id="hobby" required>
+        <option value=""></option>   
+        <option value="">being an epic gamer</option>
+           <option value="">playing sportball</option>
+           <option value="">playing bingo</option>
+           <option value="">watching stuff on netfilx for too long</option>
+       </select>
+       <br>
+       Political affiliation:
+       <select name="Political affiliation" id="affiliation" required>
+        <option value=""></option>   
+        <option value="">Apoliticalm (boring)</option>
+           <option value="">Anarco-Imperialist</option>
+           <option value="">Fully automated luxury space communism</option>
+           <option value="">You literally want the government from 1984</option>
+           <option value="">Radical centrist</option>
+       </select>
+       <br>
+       Please write out what you hope to gain from completing this useless survey.
+       <br>  
+       <textarea name=""value = id="hopes" cols="40" rows="10" required></textarea>
+       <br>
+      
+      <button onclick="compile()">Submit</button>
+      <br>
+      <div class="display" id="data"></div>
+      
+ 
+   </form></center>
+   <script src="survey.js"></script>
+</body>
+</html>

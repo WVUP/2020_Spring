@@ -22,3 +22,10 @@ function youTyped(){
     console.log(`Your Input: ${myForm.firstName.value}`);
     document.getElementById('preview').innerHTML = `<h2>You typed: <span style="color: green">${myForm.firstName.value}</span></h2>`;
 }
+
+function mySubmit(e){
+    debugger;
+    alert('submit');
+    e.preventDefault();
+    e.stopPropagation();
+}

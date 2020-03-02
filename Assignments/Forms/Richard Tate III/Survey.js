@@ -19,3 +19,18 @@ function youTyped(){
     console.log(`Your Input: ${myForm.firstName.value}`);
     document.getElementById('preview').innerHTML = `<h2>Your Input: <span style="color: orange"; text-align: center;>${myForm.firstName.value}</span></h2>`;
 }
+
+function validate()
+{
+
+var fname = document.forms["myForm"]["firstName"]; 
+
+if (name.value == "")                                  
+{ 
+    window.alert("Please enter your first name."); 
+    name.focus(); 
+    return false; 
+} 
+
+return true;
+}

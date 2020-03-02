@@ -6,6 +6,7 @@ var sex;
 var age;
 var hobby;
 var affiliation;
+var hope;
  function compile()
  {
      firstName = form.fName.value;
@@ -14,6 +15,7 @@ var affiliation;
      age = form.age.value;
      hobby = form.hobby.value;
      affiliation = form.affiliation.value;
+     hope = form.hope.value
       display();
  }
 function display()

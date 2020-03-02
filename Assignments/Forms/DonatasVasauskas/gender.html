@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+    <h3>Enter your password and then click enter!</h3>
+    <form action="password.html">
+        <label for="pwd">Password:</label>
+        <input type="password", id="pwd", name="password"><br>
+        <input type="checkbox" onclick="myFunction()">Show Password
+        <script>
+            function myFunction() {
+              var x = document.getElementById("pwd");
+              if (x.type === "password") {
+                x.type = "text";
+              } else {
+                x.type = "password";
+              }
+            }
+            </script>
+</div>
+<div>
+    <form>
+        <label for="birthday">Enter your or someone elses birthday!!!</label><br>
+        <label for="birthday">You must be atleast 18 though!</label><br>
+        <input type="date" id="birthday" name="birthday", max="02-17-2002">
+      </form>
+</div>
+            
+    </form>
+</body>
+</html>

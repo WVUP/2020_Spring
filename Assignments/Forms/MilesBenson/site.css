@@ -1,0 +1,42 @@
+.TitleBlock
+{
+    width: 40%;
+    height: 5%;
+    font-size: 4vh;
+    background-color: ghostwhite;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 30%;
+}
+
+.Form
+{
+    width: 60%;
+    margin-left: 20%;
+    font-size: 2vh;
+    background-color: ghostwhite;
+    box-shadow: 5%;
+    text-align: center;
+}
+
+table
+{
+    width:50%; 
+    text-align: center; 
+    margin-left: 25%;
+}
+
+.Display
+{
+    text-align: center;
+    font-weight: bolder;
+    color: darkred;
+    font-size: 2vh;
+}
+
+button
+{
+    width: 10%;
+    margin-left: 45%;
+}

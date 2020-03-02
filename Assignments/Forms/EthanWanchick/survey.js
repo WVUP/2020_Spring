@@ -9,8 +9,8 @@ var affiliation;
 var hope;
  function compile()
  {
-     firstName = form.fName.value;
-     lastName = form.lName.value;
+     firstName = form.firstName.value;
+     lastName = form.lastName.value;
      sex = form.sex.value;
      age = form.age.value;
      hobby = form.hobby.value;

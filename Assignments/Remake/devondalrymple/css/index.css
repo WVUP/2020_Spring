@@ -1,0 +1,19 @@
+.divider{
+    position:absolute;
+    left:50%;
+    top:10%;
+    bottom:10%;
+    border-left:10px solid darkblue;
+}
+
+.vertical-divider{
+	clear: both;
+	position: relative;
+}
+
+/* 
+Will be used to show background change on hover
+nav ul li:hover {
+background-color: white;
+}
+ */

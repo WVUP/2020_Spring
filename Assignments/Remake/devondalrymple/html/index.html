@@ -123,19 +123,22 @@
             <nav>
                 <div class="nav-wrapper" style="background-color: #091326;">
                     <ul class="right hide-on-med-and-down">
-
-                        <li><a href="https://www.wvup.edu/" style="font-size: 16px;"><span style="color: goldenrod;">Home</span></a></li>
+                        <!-- Using a Row to Implement Spacing -->
+                        <div class="row">
+                        
+                        <div class="col 2s"></div>
+                        <div class="col 1s"><li><a href="https://www.wvup.edu/" style="font-size: 16px;"><span style="color: goldenrod;">Home</span></a></li>
 
                         <!-- Dropdown Trigger -->
-                        <li><a class="dropdown-trigger" href="#!" data-target="ABOUT"><span style="color: goldenrod;">ABOUT</span> <i class="fas fa-caret-down" style="color: goldenrod;"></i></a></li>
-                        <li><a class="dropdown-trigger" href="#!" data-target="FUTURE"><span style="color: goldenrod;">FUTURE STUDENTS</span> <i class="fas fa-caret-down" style="color: goldenrod;"></i></a></li>
-                        <li><a class="dropdown-trigger" href="#!" data-target="CURRENT"><span style="color: goldenrod;">CURRENT STUDENTS</span> <i class="fas fa-caret-down" style="color: goldenrod;"></i></a></li>
-                        <li><a class="dropdown-trigger" href="#!" data-target="FACULTY"><span style="color: goldenrod;">FACULTY/STAFF</span> <i class="fas fa-caret-down" style="color: goldenrod;"></i></a></li>
-                        <li><a class="dropdown-trigger" href="#!" data-target="ALUMNI"><span style="color: goldenrod;">ALUMNI</span> <i class="fas fa-caret-down" style="color: goldenrod;"></i></a></li>
-                        <li><a class="dropdown-trigger" href="#!" data-target="FOUNDATION"><span style="color: goldenrod;">FOUNDATION</span> <i class="fas fa-caret-down" style="color: goldenrod;"></i></a></li>
+                        <div class="col 1s"><li><a class="dropdown-trigger" href="#!" data-target="ABOUT"><span style="color: goldenrod;">ABOUT</span> <i class="fas fa-caret-down" style="color: goldenrod;"></i></a></li></div>
+                        <div class="col 1s"><li><a class="dropdown-trigger" href="#!" data-target="FUTURE"><span style="color: goldenrod;">FUTURE STUDENTS</span> <i class="fas fa-caret-down" style="color: goldenrod;"></i></a></li></div>
+                        <div class="col 1s"><li><a class="dropdown-trigger" href="#!" data-target="CURRENT"><span style="color: goldenrod;">CURRENT STUDENTS</span> <i class="fas fa-caret-down" style="color: goldenrod;"></i></a></li></div>
+                        <div class="col 1s"><li><a class="dropdown-trigger" href="#!" data-target="FACULTY"><span style="color: goldenrod;">FACULTY/STAFF</span> <i class="fas fa-caret-down" style="color: goldenrod;"></i></a></li></div>
+                        <div class="col 1s"><li><a class="dropdown-trigger" href="#!" data-target="ALUMNI"><span style="color: goldenrod;">ALUMNI</span> <i class="fas fa-caret-down" style="color: goldenrod;"></i></a></li></div>
+                        <div class="col 1s"><li><a class="dropdown-trigger" href="#!" data-target="FOUNDATION"><span style="color: goldenrod;">FOUNDATION</span> <i class="fas fa-caret-down" style="color: goldenrod;"></i></a></li></div>
                         
                         <!-- Search Bar -->
-                        <li>
+                        <div class="col 1s"><li>
                             <form id="search">
                                 <div class="input-field">
                                 <input id="search" type="search" required>
@@ -143,7 +146,9 @@
                                 <i class="material-icons">close</i>
                                 </div>
                             </form>
-                        </li>
+                        </li></div>
+                        <div class="col 2s"></div>
+                        </div>
                     </ul>
                 </div>
             </nav>

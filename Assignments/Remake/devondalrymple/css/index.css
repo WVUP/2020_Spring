@@ -85,6 +85,19 @@
     display: inline-block;
 }
 
+/* All items in the dropdown are handled by this */
+[name~="dropdownItem"] {
+    border: 1px solid lightgray;
+    color: black!important;
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+/* Dropdown inside dropdown handling  */
+.dropdown-content .dropdown-content {
+    margin-left: 100%;
+ }
+
 /* 
 Will be used to show background change on hover
 nav ul li:hover {

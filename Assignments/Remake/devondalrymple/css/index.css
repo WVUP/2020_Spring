@@ -93,10 +93,10 @@
     font-size: 14px;
   }
 
-/* Dropdown inside dropdown handling  */
-.dropdown-content .dropdown-content {
-    margin-left: 100%;
- }
+/* Dropdown inside dropdown BROKEN */
+/* [name~="dropdownItem"]:hover {
+    margin-left: 100%!important;
+} */
 
 /* 
 Will be used to show background change on hover

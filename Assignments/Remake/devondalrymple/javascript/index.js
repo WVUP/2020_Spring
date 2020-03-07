@@ -1,3 +1,4 @@
+// Devon Dalrymple
 // Run Javascript Code Only if Ready
 $( document ).ready(function() {
     // Dropbox Javascript - Set to Open Dropdowns on Hover

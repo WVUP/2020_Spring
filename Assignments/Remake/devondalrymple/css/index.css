@@ -45,6 +45,8 @@
     color: #FFC814;
 }
 
+.dropdown-content a:hover {background-color: #ddd;}
+
 /* Dropdown Icon while Hovering */
 .fas fa-caret-down fa-sm:hover {
     -moz-transform: skew(-10deg, 0deg);

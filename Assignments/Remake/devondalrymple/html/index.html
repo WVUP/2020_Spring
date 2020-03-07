@@ -3,7 +3,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Main Page</title>
+        <title>Devon's WVUP Site</title>
 
         <!-- JQuery Support -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -29,23 +29,25 @@
     <body>
         <header>
         <!-- Top Navigation Bar -->
-            <nav style="height: 7em;">
+            <nav style="height: 100px">
 
                 <!-- Make the background white and center the content -->
-                <div class="nav-wrapper white" style="padding-top: 2em; padding-bottom: 2em;">
-                    <div class="row">
-                    <div class="col s1"></div>
-                    <div class="col s10">
+                <div class="nav-wrapper white" style="padding-top: 20px; padding-bottom: 20px; padding-left: 40px; padding-right: 40px;">
+                    <!-- <div class="row"> -->
+                    <!-- <div class="col s1"></div> -->
+                    <!-- <div class="col s10"> -->
+                    <!-- Logo for WVUP -->
                     <a href="https://www.wvup.edu/" class="brand-logo">
                         <img src="../res/Navigation_Logo.png" alt="WVUP Logo">
                     </a>
+                    <!-- Right Side Links -->
                     <ul id="nav-mobile" class="right hide-on-med-and-down">
-                        <li><a href="https://www.wvup.edu/future-students/admissions/undergraduate/" style="color:black; font-size: 13px;">APPLY</a></li>
-                        <li><a href="https://www.wvup.edu/alumni-friends/foundation/" style="color:black; font-size: 13px;">GIVE</a></li>
-                        <li><a href="https://www.wvup.edu/entrepreneur-opportunities/" style="color:black; font-size: 13px;">ENTREPRENEUR OPPORTUNITIES</a></li>
-                        <li><a href="https://www.wvup.edu/corporate-training/" style="color:black; font-size: 13px;">CORPORATE TRAINING</a></li>
-                        <li><a href="https://www.wvup.edu/community-classes/" style="color:black; font-size: 13px;">COMMUNITY CLASSES</a></li>
-                        <li><a href="https://www.wvup.edu/news_events/" style="color:black; font-size: 13px;">NEWS AND EVENTS</a></li>
+                        <li><a href="https://www.wvup.edu/future-students/admissions/undergraduate/" style="color:black; font-size: 12px;">APPLY</a></li>
+                        <li><a href="https://www.wvup.edu/alumni-friends/foundation/" style="color:black; font-size: 12px;">GIVE</a></li>
+                        <li><a href="https://www.wvup.edu/entrepreneur-opportunities/" style="color:black; font-size: 12px;">ENTREPRENEUR OPPORTUNITIES</a></li>
+                        <li><a href="https://www.wvup.edu/corporate-training/" style="color:black; font-size: 12px;">CORPORATE TRAINING</a></li>
+                        <li><a href="https://www.wvup.edu/community-classes/" style="color:black; font-size: 12px;">COMMUNITY CLASSES</a></li>
+                        <li><a href="https://www.wvup.edu/news_events/" style="color:black; font-size: 12px;">NEWS AND EVENTS</a></li>
                         
                         <!-- Divider Between Text and Icons -->
                         <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:lightgray; font-size: 20px; font-weight:400;">|</span>&nbsp;&nbsp;</li>
@@ -75,13 +77,13 @@
                         <li><a href="https://rand.wvnet.edu:9920/WVUPPROD/twbkwbis.P_GenMenu?name=homepage" style="color:goldenrod;"><b>OLSIS</b></a></li>
                     </ul>
                 </div>
-                <div class="col s1"></div>
+                <!-- <div class="col s1"></div> -->
                 </div>
                 </div>  
             </nav>
         
             <!-- Color Used for Second Navbar: #091326 -->
-            <!-- Dropdown Structure -->
+            <!-- Dropdown Structure for Each Box -->
             <ul id="ABOUT" class="dropdown-content">
                 <li><a href="https://www.wvup.edu/about/board-of-governors/">Board of Governors</a></li>
                 <li><a href="https://www.wvup.edu/faculty-staff/information-for-faculty-staff/business-office/">Business Office</a></li>
@@ -120,25 +122,25 @@
                 <li><a href="#!">three</a></li>
             </ul>
 
-            <nav>
-                <div class="nav-wrapper" style="background-color: #091326;">
-                    <ul class="right hide-on-med-and-down">
+            <nav style="height: 50px;">
+                <div class="nav-wrapper" style="background-color: #091326; height: 50px;">
+                    <ul style="margin-left: 80px; height: 50px;">
                         <!-- Using a Row to Implement Spacing -->
                         <div class="row">
                         
-                        <div class="col 2s"></div>
-                        <div class="col 1s"><li><a href="https://www.wvup.edu/" style="font-size: 16px;"><span style="color: goldenrod;">HOME</span></a></li>
+                        <div class="col 2s"style="height: 50px;" ></div>
+                        <div class="col 1s" style="height: 50px;" id="homeTab"><li><a href="https://www.wvup.edu/"><div id="homeText">HOME</div></a></li></div>
 
                         <!-- Dropdown Trigger -->
-                        <div class="col 1s"><li><a class="dropdown-trigger" href="#!" data-target="ABOUT"><span style="color: goldenrod;">ABOUT</span> <i class="fas fa-caret-down" style="color: goldenrod;"></i></a></li></div>
-                        <div class="col 1s"><li><a class="dropdown-trigger" href="#!" data-target="FUTURE"><span style="color: goldenrod;">FUTURE STUDENTS</span> <i class="fas fa-caret-down" style="color: goldenrod;"></i></a></li></div>
-                        <div class="col 1s"><li><a class="dropdown-trigger" href="#!" data-target="CURRENT"><span style="color: goldenrod;">CURRENT STUDENTS</span> <i class="fas fa-caret-down" style="color: goldenrod;"></i></a></li></div>
-                        <div class="col 1s"><li><a class="dropdown-trigger" href="#!" data-target="FACULTY"><span style="color: goldenrod;">FACULTY/STAFF</span> <i class="fas fa-caret-down" style="color: goldenrod;"></i></a></li></div>
-                        <div class="col 1s"><li><a class="dropdown-trigger" href="#!" data-target="ALUMNI"><span style="color: goldenrod;">ALUMNI</span> <i class="fas fa-caret-down" style="color: goldenrod;"></i></a></li></div>
-                        <div class="col 1s"><li><a class="dropdown-trigger" href="#!" data-target="FOUNDATION"><span style="color: goldenrod;">FOUNDATION</span> <i class="fas fa-caret-down" style="color: goldenrod;"></i></a></li></div>
+                        <div class="col 1s" style="height: 50px;"><li><a class="dropdown-trigger" id="dropdownTab" href="https://www.wvup.edu/about/" data-target="ABOUT"><div class="dropdownText">ABOUT <i id="dropdownIcon" class="fas fa-caret-down fa-sm" ></i></div></a></li></div>
+                        <div class="col 1s" style="height: 50px;"><li><a class="dropdown-trigger" id="dropdownTab"  href="https://www.wvup.edu/future-students/" data-target="FUTURE"><div class="dropdownText">FUTURE STUDENTS <i id="dropdownIcon" class="fas fa-caret-down fa-sm" ></i></div> </a></li></div>
+                        <div class="col 1s" style="height: 50px;"><li><a class="dropdown-trigger" id="dropdownTab"  href="https://www.wvup.edu/current-students/" data-target="CURRENT"><div class="dropdownText">CURRENT STUDENTS <i id="dropdownIcon" class="fas fa-caret-down fa-sm" ></i></div></a></li></div>
+                        <div class="col 1s" style="height: 50px;"><li><a class="dropdown-trigger" id="dropdownTab"  href="https://www.wvup.edu/faculty-staff/" data-target="FACULTY"><div class="dropdownText">FACULTY/STAFF <i id="dropdownIcon" class="fas fa-caret-down fa-sm" ></i></div></a></li></div>
+                        <div class="col 1s" style="height: 50px;"><li><a class="dropdown-trigger" id="dropdownTab"  href="https://www.wvup.edu/alumni/" data-target="ALUMNI"><div class="dropdownText">ALUMNI <i id="dropdownIcon" class="fas fa-caret-down fa-sm" ></i></div></a></li></div>
+                        <div class="col 1s" style="height: 50px;"><li><a class="dropdown-trigger" id="dropdownTab"  href="https://www.wvup.edu/foundation/" data-target="FOUNDATION"><div class="dropdownText">FOUNDATION <i id="dropdownIcon" class="fas fa-caret-down fa-sm" ></i></div></a></li></div>
                         
                         <!-- Search Bar -->
-                        <div class="col 1s"><li>
+                        <div class="col 1s" style="height: 50px;"><li>
                             <form id="search">
                                 <div class="input-field">
                                 <input id="search" type="search" required>
@@ -147,12 +149,20 @@
                                 </div>
                             </form>
                         </li></div>
-                        <div class="col 2s"></div>
+                        <div class="col 2s" style="height: 50px;"></div>
                         </div>
                     </ul>
                 </div>
             </nav>
             
         </header>
+        <!-- Slideshow container -->
+        <div>
+            <img class="mySlides" src="../res/may-2020-deadline-header.jpg">
+            <img class="mySlides" src="../res/GOT-TALENT-HOMEPAGE.jpg">
+            <img class="mySlides" src="../res/kids-college-homepage-header.jpg">
+            <img class="mySlides" src="../res/HP_JCC.jpg">
+        </div>
+  
     </body>
 </html>

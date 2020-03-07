@@ -1,14 +1,87 @@
-.divider{
-    position:absolute;
-    left:50%;
-    top:10%;
-    bottom:10%;
-    border-left:10px solid darkblue;
+/* Tilted Background for Home */
+#homeTab {
+    background-color: #FFC814;
+    -moz-transform: skew(10deg, 0deg);
+    -webkit-transform: skew(10deg, 0deg);
+    -o-transform: skew(10deg, 0deg);
+    -ms-transform: skew(10deg, 0deg);
+    transform: skew(10deg, 0deg);
+    height: 50px;
+    }
+
+    /* Text for Home Link */
+#homeText {
+    -moz-transform: skew(-10deg, 0deg);
+    -webkit-transform: skew(-10deg, 0deg);
+    -o-transform: skew(-10deg, 0deg);
+    -ms-transform: skew(-10deg, 0deg);
+    transform: skew(-10deg, 0deg);
+    color: black;
+    font-weight: 600;
+    font-size: 14px;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+}
+/* The Whole Tab for the Dropdown */
+#dropdownTab {
+    height: 50px;
 }
 
-.vertical-divider{
-	clear: both;
-	position: relative;
+/* The Whole Tab for the Dropdown while Hovering */
+#dropdownTab:hover {
+    background-color: #FFC814;
+    -moz-transform: skew(10deg, 0deg);
+    -webkit-transform: skew(10deg, 0deg);
+    -o-transform: skew(10deg, 0deg);
+    -ms-transform: skew(10deg, 0deg);
+    transform: skew(10deg, 0deg);
+    height: 50px;
+}
+
+/* Dropdown Icon */
+.fas fa-caret-down fa-sm {
+    color: #FFC814;
+}
+
+/* Dropdown Icon while Hovering */
+.fas fa-caret-down fa-sm:hover {
+    -moz-transform: skew(-10deg, 0deg);
+    -webkit-transform: skew(-10deg, 0deg);
+    -o-transform: skew(-10deg, 0deg);
+    -ms-transform: skew(-10deg, 0deg);
+    transform: skew(-10deg, 0deg);
+    color: black;
+    font-weight: 600;
+    font-size: 14px;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+/* Text on Dropdown Box */
+.dropdownText {
+    color: #FFC814;
+    font-size: 14px;
+    height: 50px;
+}
+
+/* Text on Dropdown Box while Hovering */
+.dropdownText:hover {
+    -moz-transform: skew(-10deg, 0deg);
+    -webkit-transform: skew(-10deg, 0deg);
+    -o-transform: skew(-10deg, 0deg);
+    -ms-transform: skew(-10deg, 0deg);
+    transform: skew(-10deg, 0deg);
+    color: black;
+    font-weight: 600;
+    font-size: 14px;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
 }
 
 /* 
@@ -17,3 +90,10 @@ nav ul li:hover {
 background-color: white;
 }
  */
+
+ /* Slideshow CSS */
+
+ /* * {box-sizing:border-box} */
+
+/* Slideshow container */
+.mySlides {display:none;}

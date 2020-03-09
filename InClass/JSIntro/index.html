@@ -9,8 +9,10 @@
 <body>
     <h1 id="my-header" onclick="test()">Javascript 4 life</h1>
 
-    <form name="myForm">
+    <form name="myForm" onsubmit="mySubmit()">
         <input onkeydown="youTyped()" type="text" placeholder="First Name" name="firstName">
+        <input type="text" name="fname" placeholder="enter name" required>
+        <input type="submit" value="Submit">
     </form>
 
     <span id="preview"></span>

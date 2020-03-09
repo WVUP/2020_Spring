@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Survey</title>
+    <link rel="stylesheet" href="Survey.css">
+
+</head>
+<body>
+    <h2>Game Survey</h2>
+    <form name="Survey">
+       <!--First and Last Name (text)-->
+        <div>
+            <label for="fname">First name:</label><br>
+            <input onkeydown="Typed()"type="text" id="fname" name="fname" placeholder="First Name" required> <br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" placeholder="Last Name" required>
+        </div>
+        <br>
+        <!--Email-->
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Please Enter Your Email" required>
+        </div>
+        <br>
+        <!--(Radio)-->
+        <div>
+            <label for="Gender">Gender:</label> <br>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="other" required>
+            <label for="other">Other</label>
+        </div>
+        <br>
+        <!--Checkbox-->
+        <div>
+            <label for="FPS Game">Which FPS Franchise/Franchises do you Like?</label> <br>
+            <input type="checkbox" id="game1" name="game1" value="Battlefield" class="checkbox1" required>
+            <label for="game1">Battlefield</label> <br>
+            <input type="checkbox" id="game2" name="game2" value="Call of Duty" class="checkbox2" required>
+            <label for="game2">Call of Duty</label><br>
+            <input type="checkbox" id="game3" name="game3" value="Halo" class="checkbox3" required>
+            <label for="game3">Halo</label> <br>
+            <input type="checkbox" id="game4" name="game4" value="Counter-Strike" class="checkbox4" required>
+            <label for="game4">Counter-Strike</label><br>
+            <input type="checkbox" id="game5" name="game5" value="Far Cry" class="checkbox5" required>
+            <label for="game5">Far Cry</label><br>
+        </div>
+        <!--Button-->
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+    <span id="preview"></span>
+    <script src="Survey.js"></script>
+</body>
+</html>

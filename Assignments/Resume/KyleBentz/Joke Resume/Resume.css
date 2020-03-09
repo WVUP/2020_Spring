@@ -1,0 +1,42 @@
+html, body{
+    background-color: #222;
+    border: 5px solid white;
+}
+h2{
+    color: white;
+    font-style: Bold;
+    text-decoration: underline;
+    font-size: 10mm;
+    margin-inline-start: 5px;
+}
+h3{
+    color: white;
+    font-style: Bold;
+    font-size: 7mm;
+    margin-inline-start: 5px;
+    margin-block-end: 5px;
+}
+p{
+    color: white;
+    font-size: 4mm;
+    margin-inline-start: 5px;
+}
+h4{
+    color: white;
+    font-size: 5mm;
+    font-style: bold;
+    margin-inline-start: 5px;
+    margin-inline-end: 5px;
+    margin-right: 5px;
+}
+h5{
+    color: white;
+    font-size: 4mm;
+    text-align: right;
+    margin-inline-end: 5px;
+}
+img{
+    margin-inline-end: 5px;
+    margin-inline-start: 5px;
+    border: 2px solid white;
+}

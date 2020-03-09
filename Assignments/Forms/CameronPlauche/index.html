@@ -20,6 +20,10 @@
         }
 
     }
+    function youTyped(){
+        console.log(`Your Input: ${myForm.fname.value}`);
+        document.getElementById('preview').innerHTML = `<h2>You typed: <span style="color: green">${myForm.fname.value}</span></h2>`;
+    }
     function checkPassword(form) {
         password1 = form.password1.value;
         password2 = form.password2.value;
@@ -45,6 +49,14 @@
         var str = document.getElementById("text1").value;
         alert("Vaue inside text box is: " + str);
     }
+    function getName() {
+        var str1 = document.getElementById(fname).value;
+        var str2 = document.getElementById(lname).value;
+        var str3 = 'Welcome ' + str1 + ' ' + str2;
+    }
+    function displayName() {
+        document.write(getName());
+    }
     </script>   
 </head>
 <body class="body">
@@ -55,9 +67,9 @@
     </header>
     <div class="loginForm">
         <p class = "register">Register</p>
-        <form onsubmit="return checkRegistration(this)">
+        <form name = "myForm" onsubmit="return checkRegistration(this)">
             <label for="fname"></label><br>
-            <input type="text" id="fname" name="fname" placeholder="First Name"><br>
+            <input onkeydown ="youTyped()"type="text" id="fname" name="fname" placeholder="First Name"><br>
             <label for="lname"></label><br>
             <input type="text" id="lname" name="lname" placeholder="Last Name"><br>
             <label for="email"></label><br>
@@ -69,7 +81,9 @@
             <button onclick="checkPassword()" id = "btn1"> Submit</button>
             
         </form>
+        <span id="preview"></span>
     </div>
+
 
 </body>
 </html>

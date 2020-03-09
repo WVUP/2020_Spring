@@ -15,7 +15,7 @@ var hope;
      age = myForm.age.value;
      hobby = myForm.hobby.value;
      affiliation =myForm.affiliation.value;
-     hope = myForm.hope.value
+     hope = myForm.hope.value}
       display();
  }
 function display()

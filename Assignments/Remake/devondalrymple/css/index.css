@@ -1,0 +1,113 @@
+/* Devon Dalrymple */
+/* Tilted Background for Home */
+#homeTab {
+    background-color: #FFC814;
+    -moz-transform: skew(10deg, 0deg);
+    -webkit-transform: skew(10deg, 0deg);
+    -o-transform: skew(10deg, 0deg);
+    -ms-transform: skew(10deg, 0deg);
+    transform: skew(10deg, 0deg);
+    height: 50px;
+    }
+
+    /* Text for Home Link */
+#homeText {
+    -moz-transform: skew(-10deg, 0deg);
+    -webkit-transform: skew(-10deg, 0deg);
+    -o-transform: skew(-10deg, 0deg);
+    -ms-transform: skew(-10deg, 0deg);
+    transform: skew(-10deg, 0deg);
+    color: black;
+    font-weight: 600;
+    font-size: 14px;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+}
+/* The Whole Tab for the Dropdown */
+#dropdownTab {
+    height: 50px;
+}
+
+/* The Whole Tab for the Dropdown while Hovering */
+#dropdownTab:hover {
+    background-color: #FFC814;
+    -moz-transform: skew(10deg, 0deg);
+    -webkit-transform: skew(10deg, 0deg);
+    -o-transform: skew(10deg, 0deg);
+    -ms-transform: skew(10deg, 0deg);
+    transform: skew(10deg, 0deg);
+    height: 50px;
+}
+
+/* Dropdown Icon */
+.fas fa-caret-down fa-sm {
+    color: #FFC814;
+}
+
+/* Dropdown Icon while Hovering */
+.fas fa-caret-down fa-sm:hover {
+    -moz-transform: skew(-10deg, 0deg);
+    -webkit-transform: skew(-10deg, 0deg);
+    -o-transform: skew(-10deg, 0deg);
+    -ms-transform: skew(-10deg, 0deg);
+    transform: skew(-10deg, 0deg);
+    color: black;
+    font-weight: 600;
+    font-size: 14px;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+/* Text on Dropdown Box */
+.dropdownText {
+    color: #FFC814;
+    font-size: 14px;
+    height: 50px;
+}
+
+/* Text on Dropdown Box while Hovering */
+.dropdownText:hover {
+    -moz-transform: skew(-10deg, 0deg);
+    -webkit-transform: skew(-10deg, 0deg);
+    -o-transform: skew(-10deg, 0deg);
+    -ms-transform: skew(-10deg, 0deg);
+    transform: skew(-10deg, 0deg);
+    color: black;
+    font-weight: 600;
+    font-size: 14px;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+/* All items in the dropdown are handled by this */
+[name~="dropdownItem"] {
+    border: 1px solid lightgray;
+    color: black!important;
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+/* Dropdown inside dropdown BROKEN */
+/* [name~="dropdownItem"]:hover {
+    margin-left: 100%!important;
+} */
+
+/* 
+Will be used to show background change on hover
+nav ul li:hover {
+background-color: white;
+}
+ */
+
+ /* Slideshow CSS */
+
+ /* * {box-sizing:border-box} */
+
+/* Slideshow container */
+.mySlides {display:none;}

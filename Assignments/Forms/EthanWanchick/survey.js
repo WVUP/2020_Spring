@@ -9,13 +9,13 @@ var affiliation;
 var hope;
  function compile()
  {
-     firstName = form.firstName.value;
-     lastName = form.lastName.value;
-     sex = form.sex.value;
-     age = form.age.value;
-     hobby = form.hobby.value;
-     affiliation = form.affiliation.value;
-     hope = form.hope.value
+     firstName = myForm.firstName.value;
+     lastName = myForm.lastName.value;
+     sex = myForm.sex.value;
+     age = myForm.age.value;
+     hobby = myForm.hobby.value;
+     affiliation =myForm.affiliation.value;
+     hope = myForm.hope.value
       display();
  }
 function display()

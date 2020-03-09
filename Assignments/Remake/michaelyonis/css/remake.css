@@ -1,0 +1,19 @@
+.vl {
+    border-left: 3px solid gray;
+    height: 50px;
+}
+#navbarmain {
+    background-color: #091326;
+    
+}
+#link {
+    color: gold;
+}
+#link:hover {
+    color: rgb(9, 1, 32);
+    background-color: gold;
+}
+.btn-outline-success:hover {
+    background-color:white;
+    color: black;
+}

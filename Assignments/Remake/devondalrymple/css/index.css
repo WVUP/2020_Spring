@@ -134,23 +134,42 @@ background-color: white;
   }
 
   /* Featured News */
+  /* Smaller images for the horizontal cards */
   .cardimage {
+      max-width: 112px;
+      max-height: 110px;
       width: 112px;
       height: 110px;
-      margin: 12px;
+      overflow: hidden;
+      margin: 11px;
       -webkit-border-radius: 20px !important;
       -moz-border-radius: 20px !important;
       border-radius: 20px !important;
   }
 
+  /* For the big card image */
   .card-image {
     -webkit-border-radius: 24px 24px 0px 0px;
     -moz-border-radius: 24px 24px 0px 0px;
     border-radius: 24px 24px 0px 0px;
   }
 
+  /* For each of the cards */
   .card {
     -webkit-border-radius: 24px !important;
     -moz-border-radius: 24px !important;
     border-radius: 24px !important;
+  }
+
+  /* For the date header of the horizontal cards */
+  .date-header {
+      color: rgba(0, 0, 0, .6) !important;
+      font-size: 12px !important;
+  }
+
+  /* For the text in the cards */
+  .card-link-text {
+      color: #172b54;
+      font-size: 15px;
+      font-weight: 500;
   }

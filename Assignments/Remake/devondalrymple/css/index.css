@@ -178,6 +178,10 @@ background-color: white;
   .explore {
     max-width: 100%;
     max-height: 100%;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    position: relative;
   }
 
   /* For the Explore Picture Button Hover Effect */
@@ -186,10 +190,23 @@ background-color: white;
     opacity: 0.7;
   }
 
+  .explore-picture {
+    max-width: 100%;
+    max-height: 100%;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+  }
+
   /* Text in the Explore Buttons */
   .explore-text {
-      color: #FFBF1C;
-      font-size: 12px;
+      color: #FFFFFF;
+      font-size: 22px;
+      display: table-cell;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
   }
 
   /* Make the Text Change Color on Hover */
@@ -202,6 +219,7 @@ background-color: white;
   .explore-icon {
       color: #FFBF1C;
       visibility: hidden;
+      display: table-cell;
   }
 
   /* Make the Icon for Explore Appear on Hover */

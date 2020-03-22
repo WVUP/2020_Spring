@@ -173,3 +173,38 @@ background-color: white;
       font-size: 15px;
       font-weight: 500;
   }
+
+  /* For the Explore Picture Buttons */
+  .explore {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  /* For the Explore Picture Button Hover Effect */
+  .explore:hover {
+    background-color: #2a303e;
+    opacity: 0.7;
+  }
+
+  /* Text in the Explore Buttons */
+  .explore-text {
+      color: #FFBF1C;
+      font-size: 12px;
+  }
+
+  /* Make the Text Change Color on Hover */
+  .explore:hover .explore-text {
+      color: #FFBF1C;  
+
+  }
+
+  /* Handle the Appearing Icon  */
+  .explore-icon {
+      color: #FFBF1C;
+      visibility: hidden;
+  }
+
+  /* Make the Icon for Explore Appear on Hover */
+  .explore:hover .explore-icon {
+    visibility: visible;
+  }

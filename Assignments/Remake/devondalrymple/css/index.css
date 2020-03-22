@@ -132,3 +132,25 @@ background-color: white;
   #myBtn:hover {
     background-color: #555; /* Add a dark-grey background on hover */
   }
+
+  /* Featured News */
+  .cardimage {
+      width: 112px;
+      height: 110px;
+      margin: 12px;
+      -webkit-border-radius: 20px !important;
+      -moz-border-radius: 20px !important;
+      border-radius: 20px !important;
+  }
+
+  .card-image {
+    -webkit-border-radius: 24px 24px 0px 0px;
+    -moz-border-radius: 24px 24px 0px 0px;
+    border-radius: 24px 24px 0px 0px;
+  }
+
+  .card {
+    -webkit-border-radius: 24px !important;
+    -moz-border-radius: 24px !important;
+    border-radius: 24px !important;
+  }

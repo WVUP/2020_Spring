@@ -231,3 +231,9 @@ background-color: white;
   .explore:hover .explore-icon {
     visibility: visible;
   }
+
+  /* Featured Areas of Study Row*/
+  .featrow {
+    padding-top: 55px;
+    padding-bottom: 80px;
+  }

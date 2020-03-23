@@ -186,8 +186,8 @@ background-color: white;
 
   /* For the Explore Picture Button Hover Effect */
   .explore:hover {
-    background-color: #2a303e;
-    opacity: 0.7;
+    background-color: #2a303e !important;
+    opacity: 0.9 !important;
   }
 
   .explore-picture {
@@ -207,6 +207,7 @@ background-color: white;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+      white-space: nowrap;
   }
 
   /* Make the Text Change Color on Hover */
@@ -220,6 +221,10 @@ background-color: white;
       color: #FFBF1C;
       visibility: hidden;
       display: table-cell;
+      position: absolute;
+      top: 58%;
+      left: 50%;
+      transform: translate(-50%, -50%);
   }
 
   /* Make the Icon for Explore Appear on Hover */

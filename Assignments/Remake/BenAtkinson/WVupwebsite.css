@@ -6,16 +6,81 @@ padding-left: .5in;
 }
 
 .h5{
+    float: inherit;
 padding-left: 6in;
 margin: 0;
+color: #091326;
 }
 
 .fab{
+    float: inherit;
 padding-left: 2mm;
 font-size: x-large;
+color: #091326;
+margin: 0;
 }
 
 .fas{
+    float: inherit;
 padding-left: 2mm;
 font-size: x-large;
+color: #091326;
+}
+
+.custom-container {
+    width: 95%;
+    margin: 0;
+}
+
+.dropdown {
+    padding-left: 1in;
+    margin: 0;
+text-align: center;
+}
+
+.dropdown > li {
+    display: inline-block;
+    line-height: 60px;
+    padding: 0 15px;
+    cursor: pointer;
+}
+
+.dropdown > li:hover {
+    background-image: url('https://www.wvup.edu/wp-content/uploads/2018/04/menu-icon.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.dropdown li:hover a {
+    color: #091326;
+}
+
+.dropdown li a {
+    color: #ffc814;
+    transition: color 500ms ease-in;
+}
+
+.dropdown > li:hover .submenu {
+    display: block;
+}
+
+.submenu {
+    position: absolute;
+    background: #fafafb;
+    padding: 0 15px;
+    width: 250px;
+    border: 1px solid silver;
+    display: none;
+}
+
+.submenu li:not(:nth-last-child(1)) {
+    border-bottom: 1px solid silver;    
+}
+
+a, a:hover {
+    text-decoration: none;
+}
+
+.body{
+    margin: 0em;
 }

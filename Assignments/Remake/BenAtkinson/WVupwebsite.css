@@ -1,14 +1,3 @@
-
-
-.Picture
-{
-    max-height:650px;
-    max-width:2000px;
-    width: 2000;
-    height: 650px;
-
-
-}
  
 .buttons{
 padding-left: .5in;
@@ -18,11 +7,15 @@ padding-left: .5in;
 
 .h5{
 padding-left: 6in;
-
-
+margin: 0;
 }
 
 .fab{
 padding-left: 2mm;
-size: 15px;
+font-size: x-large;
+}
+
+.fas{
+padding-left: 2mm;
+font-size: x-large;
 }

@@ -36,6 +36,7 @@ color: #091326;
     padding-left: 1in;
     margin: 0;
 text-align: center;
+display: block;
 }
 
 .dropdown > li {
@@ -58,10 +59,12 @@ text-align: center;
 .dropdown li a {
     color: #ffc814;
     transition: color 500ms ease-in;
+
 }
 
 .dropdown > li:hover .submenu {
     display: block;
+    
 }
 
 .submenu {
@@ -71,6 +74,7 @@ text-align: center;
     width: 250px;
     border: 1px solid silver;
     display: none;
+    
 }
 
 .submenu li:not(:nth-last-child(1)) {
@@ -83,4 +87,9 @@ a, a:hover {
 
 .body{
     margin: 0em;
+}
+
+.news{
+padding-left: 2in;
+
 }

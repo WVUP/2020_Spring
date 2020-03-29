@@ -1,0 +1,201 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WVUP</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .custom-container {
+            width: 93%;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        /* this is our ul element */
+        .menu {
+            padding: 0;
+            margin: 0;
+        }
+
+        .menu > li {
+            display: inline-block;
+            line-height: 60px;
+            padding: 0 15px;
+            cursor: pointer;
+        }
+
+        .menu > li:hover {
+            background-image: url('https://www.wvup.edu/wp-content/uploads/2018/04/menu-icon.png');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+
+        .menu li:hover a {
+            color: #091326;
+        }
+
+        .menu li a {
+            color: #ffc814;
+            transition: color 500ms ease-in;
+        }
+        
+        .menu > li:hover .submenu {
+            display: block;
+        }
+
+        .submenu {
+            position: absolute;
+            background: #fafafb;
+            padding: 0 15px;
+            width: 250px;
+            border: 1px solid silver;
+            display: none;
+        }
+
+        .submenu li:not(:nth-last-child(1)) {
+            border-bottom: 1px solid silver;    
+        }
+
+        a, a:hover {
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- white logo header -->
+    <header style="width: 100%; height: 80px; background-color:white;">
+        <div class="custom-container">
+            <a href="hhtps://www.wvup.edu" class="WVUP LOGO">
+                <img src="https://www.wvup.edu/wp-content/uploads/2018/02/Navigation_Logo.png">
+                </a>
+        </div>
+        
+    </header>
+
+    <!-- blue navbar -->
+    <div style="height: 60px; background-color: #091326;">
+        <!-- match the container -->
+        <div class="custom-container">
+            <!-- list-unstyled is a bootstrap css class that does some nice formatting out of the box -->
+            <ul class="menu list-unstyled">
+                <li>
+                    <a href="#" title="Go Home">
+                    Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                    About
+                    </a>
+
+                    <ul class="submenu list-unstyled">
+                        <li>Board of Governors</li>
+                        <li>Business Office</li>
+                        <li>Contact Us</li>
+                        <li>Executive Staff</li>
+                        <li>History</li>
+                        <li>Jackson County Center</li>
+                        <li>Office of the President</li>
+                        <li>Policies and Procedures</li>
+                        <li>Social Justice</li>
+                        <li>WVU Parkersburg Institutional Data</li>
+
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                    Future Students
+                    </a>
+
+                    <ul class="submenu list-unstyled">
+                            <li>Academics</li>
+                            <li>Admissions</li>
+                            <li>Course Catalogs</li>
+                            <li>Financial Aid</li>
+                            <li>High School Students</li>
+                            <li>Information for Ohio Residents</li>
+                            <li>International</li>
+                            <li>Transfer & Visiting Students</li>
+                            <li>WV Invests</li>
+                        </ul>
+                </li>
+                <li>
+                    <a href="#">
+                    Current Students
+                    </a>
+
+                    <ul class="submenu list-unstyled">
+                        <li>Academics</li>
+                        <li>Advising</li>
+                        <li>Course Catalogs</li>
+                        <li>Financial Aid</li>
+                        <li>Library</li>
+                        <li>OLSIS</li>
+                        <li>Registrar/Records</li>
+                        <li>Resources</li>
+                        <li>Safety & Security</li>
+                        <li>Services</li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                    Faculty/Staff
+                    </a>
+
+                    <ul class="submenu list-unstyled">
+                        <li>Directory</li>
+                        <li>Forms</li>
+                        <li>Information For Faculty & Staff</li>
+                        <li>Links</li>
+                        <li>Offices</li>
+                        
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                    Alumni
+                    </a>
+
+                    <ul class="submenu list-unstyled">
+                        <li>Alumna/Alumnus of the Year</li>
+                        <li>Career Services</li>
+                        <li>Transcript Requests</li>
+                        
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                    Foundation
+                    </a>
+
+                    <ul class="submenu list-unstyled">
+                        <li>Scholarships in West Virginia</li>
+                        
+                    </ul>
+                </li>
+            </ul> 
+        </div>
+        
+    </div>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="https://www.wvup.edu/wp-content/uploads/2020/03/covid19-homepage.jpg" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="https://www.wvup.edu/wp-content/uploads/2020/03/kids-college-homepage-header.jpg" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="..." alt="Third slide">
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -237,3 +237,14 @@ background-color: white;
     padding-top: 55px;
     padding-bottom: 80px;
   }
+
+  /* Link In The Footer for EEO/Affirmative Action */
+  #eeoLink {
+    color: #E9B145;
+    text-decoration: underline;
+  }
+
+  /* When the EEO Link Is Hovered */
+  #eeoLink :hover {
+    text-decoration: none;
+  }

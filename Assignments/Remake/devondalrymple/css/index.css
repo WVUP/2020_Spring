@@ -260,4 +260,46 @@ background-color: white;
     border-radius: 4px;
     
   }
+
+  /* Apply Now Side Button */
+  #applyNowBtn {
+    display: block;
+    position: fixed;
+    bottom: 60%;
+    right: 0%;
+    z-index: 99;
+    font-size: 15px;
+    border: 1px solid #E9B145;
+    outline: none;
+    background-color: #E9B145;
+    color: #091326; 
+    cursor: pointer;
+    padding: 12px 25px;
+    border-radius: 4px;
+    transform: rotate(270deg);
+    /* https://css-tricks.com/forums/topic/transform-rotated-element-fixed-to-the-right-help/ */
+    transform-origin: right bottom;
+    
+  }
+
+  /* Learn More Side Button */
+  #learnMoreBtn {
+    display: block;
+    position: fixed;
+    bottom: 45%;
+    right: 0%;
+    z-index: 99;
+    font-size: 15px;
+    border: 1px solid #E9B145;
+    outline: none;
+    background-color: #E9B145;
+    color: #091326; 
+    cursor: pointer;
+    padding: 12px 25px;
+    border-radius: 4px;
+    transform: rotate(270deg);
+    /* https://css-tricks.com/forums/topic/transform-rotated-element-fixed-to-the-right-help/ */
+    transform-origin: right bottom;
+    
+  }
   

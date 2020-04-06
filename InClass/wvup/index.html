@@ -1,0 +1,142 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WVUP</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .custom-container {
+            width: 93%;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        /* this is our ul element */
+        .menu {
+            padding: 0;
+            margin: 0;
+        }
+
+        .menu > li {
+            display: inline-block;
+            line-height: 60px;
+            padding: 0 15px;
+            cursor: pointer;
+        }
+
+        .menu > li:hover {
+            background-image: url('https://www.wvup.edu/wp-content/uploads/2018/04/menu-icon.png');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+
+        .menu li:hover a {
+            color: #091326;
+        }
+
+        .menu li a {
+            color: #ffc814;
+            transition: color 500ms ease-in;
+        }
+        
+        .menu > li:hover .submenu {
+            display: block;
+        }
+
+        .submenu {
+            position: absolute;
+            background: #fafafb;
+            padding: 0 15px;
+            width: 250px;
+            border: 1px solid silver;
+            display: none;
+        }
+
+        .submenu li:not(:nth-last-child(1)) {
+            border-bottom: 1px solid silver;    
+        }
+
+        a, a:hover {
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- white logo header -->
+    <header style="width: 100%; height: 80px; background-color:white;">
+        <div class="custom-container">
+            Logo here
+        </div>
+        
+    </header>
+
+    <!-- blue navbar -->
+    <div style="height: 60px; background-color: #091326;">
+        <!-- match the container -->
+        <div class="custom-container">
+            <!-- list-unstyled is a bootstrap css class that does some nice formatting out of the box -->
+            <ul class="menu list-unstyled">
+                <li>
+                    <a href="#" title="Go Home">
+                    Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                    About
+                    </a>
+
+                    <ul class="submenu list-unstyled">
+                        <li>Option 1</li>
+                        <li>Option 2</li>
+                        <li>Option 3</li>
+                        <li>Option 4</li>
+                        <li>Option 5</li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                    Future Students
+                    </a>
+
+                    <ul class="submenu list-unstyled">
+                            <li>Future 1</li>
+                            <li>Future 2</li>
+                            <li>Future 3</li>
+                            <li>Future 4</li>
+                            <li>Future 5</li>
+                        </ul>
+                </li>
+                <li>
+                    <a href="#">
+                    Current Students
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                    Faculty/Staff
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                    Alumni
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                    Foundation
+                    </a>
+                </li>
+            </ul> 
+        </div>
+        
+    </div>
+</body>
+</html>

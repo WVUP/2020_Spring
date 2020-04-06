@@ -6,6 +6,7 @@
 .divider
 {
     font-size: x-large;
+
 }
 
 .custom-container {
@@ -60,4 +61,5 @@
 
 a, a:hover {
     text-decoration: none;
+
 }

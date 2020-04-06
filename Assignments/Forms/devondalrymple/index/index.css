@@ -1,0 +1,65 @@
+html, 
+body {
+    height: 100%;
+    min-height: 100%;
+    background-color: #011627;
+}
+
+/* Style the header with a grey background and some padding */
+/* https://www.cssmatic.com/border-radius */
+.header {
+    overflow: hidden;
+    border-radius: 60px 60px 140px 140px;
+    -moz-border-radius: 60px 60px 140px 140px;
+    -webkit-border-radius: 60px 60px 140px 140px;
+    border: 0px solid #000000;
+    background-color: #ED1C24;
+    padding: 10px 5px;
+  }
+  
+  /* https://www.w3schools.com/howto/howto_css_responsive_header.asp */
+  /* Style the header links */
+  .header a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+  }
+
+    
+    /* Change the background color on mouse-over */
+    .header a:hover {
+    background-color: #ddd;
+    color: black;
+    }
+    
+    /* Float the link section to the right */
+    .header-right {
+    float: right;
+    }
+
+#inner {
+    width: 80%;
+    min-height: 100%;
+    height: 100%;
+    margin: 0 auto;
+    
+  }
+
+h3 {
+    color: #F42C04;
+}
+
+p {
+    color: #FA7921;
+    margin: 0;
+    padding: 0;
+}
+
+/* Red, Orange, Yellow, Green */
+/* Resteraunt Form */
+/* Color Scheme: MAASTRICHT BLUE = Background; RED (PIGMENT) = Header; ANDROID GREEN = Choice Background; FERRARI RED = Bold Text; PRINCETON ORANGE = Text; */

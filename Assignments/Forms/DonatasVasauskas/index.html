@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <script language="JavaScript">
+        function showInput() {
+            document.getElementById('display').innerHTML = 
+                        document.getElementById("username").value;
+        }
+      </script>
+      
+<body>
+    <h2 class="header">Weelcome to endless registration</h2>
+    <div>
+        <fieldset>
+        <legend>Simple data:</legend>
+        <form action="enter.html">
+        <label for="UserName">Enter your Username:</label><br>
+        <input type="text", id="username",name="username" value=""><br>
+        <label for="Email">Enter your email so we can spam you!</label><br>
+        <input type="email" name="enamil" id="email"><br>
+        <input type="submit", value="Enter">
+        <input type="reset"><b></b>
+        
+    
+        </form>
+    </fieldset>
+    </div>
+</body>
+</html>

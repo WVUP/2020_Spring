@@ -1,0 +1,89 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css"/>
+    <title>Registration Form</title>
+    <script type="text/javascript">
+    function checkRegistration(form) {
+        checkUsername(form);
+        checkPassword(form);
+        checkEmail(form);
+    }
+    function checkUsername(form) {
+        firstName = form.fname.value;
+        lastName = form.lname.value;
+
+        if(firstName == '' || lastName == '') {
+            alert("Please enter your name.")
+        }
+
+    }
+    function youTyped(){
+        console.log(`Your Input: ${myForm.fname.value}`);
+        document.getElementById('preview').innerHTML = `<h2>You typed: <span style="color: green">${myForm.fname.value}</span></h2>`;
+    }
+    function checkPassword(form) {
+        password1 = form.password1.value;
+        password2 = form.password2.value;
+
+        if(password1 == '' || password2 == '') {
+            alert ("Please enter a password.");
+        }
+
+        else if(password1 != password2) {
+            alert ("Passwords do not match.");
+        }
+
+    }
+    function checkEmail(form) {
+        email = form.email.value;
+
+        if(email == '') {
+            alert("Please enter a valid email")
+        }
+    }
+    function fn1()
+    {
+        var str = document.getElementById("text1").value;
+        alert("Vaue inside text box is: " + str);
+    }
+    function getName() {
+        var str1 = document.getElementById(fname).value;
+        var str2 = document.getElementById(lname).value;
+        var str3 = 'Welcome ' + str1 + ' ' + str2;
+    }
+    function displayName() {
+        document.write(getName());
+    }
+    </script>   
+</head>
+<body class="body">
+    <header>
+        <div class="header">
+            <h1>Welcome, please register. </h1>
+        </div>
+    </header>
+    <div class="loginForm">
+        <p class = "register">Register</p>
+        <form name = "myForm" onsubmit="return checkRegistration(this)">
+            <label for="fname"></label><br>
+            <input onkeydown ="youTyped()"type="text" id="fname" name="fname" placeholder="First Name"><br>
+            <label for="lname"></label><br>
+            <input type="text" id="lname" name="lname" placeholder="Last Name"><br>
+            <label for="email"></label><br>
+            <input type="text" id="email" name="email" placeholder="Email Address"><br>
+            <label for="password"></label><br>
+            <input type="password" id="password" name="password1" placeholder="Password"><br>
+            <label for="confirmpassword"></label><br>
+            <input type="password" id="password" name="password2" placeholder="Confirm Password"><br>
+            <button onclick="checkPassword()" id = "btn1"> Submit</button>
+            
+        </form>
+        <span id="preview"></span>
+    </div>
+
+
+</body>
+</html>

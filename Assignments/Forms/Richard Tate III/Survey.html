@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Survey</title>
+    
+    <link rel="stylesheet" href="css/Survey.css">
+    
+</head>
+<body style="background: aqua;">
+   <div class="info">
+    <h1 id="my-header" style="text-align: center;">College Survey</h1>
+
+    <h3>Name:</h3>
+    <form name="myForm" onsubmit="return validate()" action="/submit.php" method="POST">
+        <input type="text" placeholder="First Name" name="firstName" required>
+    </form>
+   
+   <form>
+    <input type="text" placeholder="Last Name" name="lastName" required>
+</form>
+
+<h3>Your current major:</h3>
+
+<form>
+    <input type="text" placeholder="Major" name="major">
+</form>
+
+<h3>Date:</h3>
+
+<form>
+    <input type="date" placeholder="mm/dd/yyyy" name="date">
+</form>
+
+<h3>Whats your favourite color? (p.s. mines orange)</h3>
+<form>
+    <input type="checkbox" class="color1" name="color1" value="red">
+    <label for="color1">red</label><br>
+    <input type="checkbox" class="color2" name="color2" value="blue">
+    <label for="color2">blue</label><br>
+    <input type="checkbox" class="color3" name="color3" value="gold">
+    <label for="color3">gold</label><br>
+</form>
+
+<h3>Thank you for your time!!</h3>
+
+<form>
+    <input type="submit" value="Submit">
+</form>
+
+</div>
+
+    <span id="preview"></span>
+
+    <script src="Survey.js"></script>
+</body>
+</html>

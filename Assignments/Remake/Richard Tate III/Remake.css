@@ -6,4 +6,60 @@
 .divider
 {
     font-size: x-large;
+
+}
+
+.custom-container {
+    width: 93%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.menu {
+    padding: 0;
+    margin: 0;
+}
+
+.menu > li {
+    display: inline-block;
+    line-height: 60px;
+    padding: 0 15px;
+    cursor: pointer;
+}
+
+.menu > li:hover {
+    background-image: url('https://www.wvup.edu/wp-content/uploads/2018/04/menu-icon.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.menu li:hover a {
+    color: #091326;
+}
+
+.menu li a {
+    color: #ffc814;
+    transition: color 500ms ease-in;
+}
+
+.menu > li:hover .submenu {
+    display: block;
+}
+
+.submenu {
+    position: absolute;
+    background: #fafafb;
+    padding: 0 15px;
+    width: 250px;
+    border: 1px solid silver;
+    display: none;
+}
+
+.submenu li:not(:nth-last-child(1)) {
+    border-bottom: 1px solid silver;    
+}
+
+a, a:hover {
+    text-decoration: none;
+
 }

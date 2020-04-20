@@ -1,4 +1,4 @@
-#navBarSearchForm input[type=text]{width:430px !important;}
+
 
 /* https://www.w3schools.com/howto/howto_js_sidenav.asp */
 /* Side Navbar */ 
@@ -18,7 +18,7 @@
   .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 24px;
     color: #f1f1f1;
     display: block;
     transition: 0.3s;

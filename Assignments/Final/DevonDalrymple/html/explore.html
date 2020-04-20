@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Explore Feed</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/explore.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/716ff72cd3.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+    <script src="../js/explore.js"></script>
+</head>
+<body>
+    <!-- Top Navbar -->
+    <nav class="navbar fixed-top bg-primary">
+        <div class="container-fluid">
+            <div class="row" style="width: 100%;">
+                <div class="col-1">
+                    <span style="font-size:30px; cursor:pointer; color: #f1f1f1;" onclick="toggleNav()">&#9776;</span>
+                </div>
+                <div class="col-10">
+                    <form class="form-inline" style="width: 1500px;">
+                    <input class="form-control mr-sm-2" style="width: 1500px;" type="search" placeholder="Search" aria-label="Search">
+                    </form>
+                </div>
+                <div class="col-1" style="word-spacing: 30px;">
+                    <span style="font-size:30px; cursor:pointer; color: #f1f1f1;"><i class="fas fa-user-circle"></i></span>
+                    <span style="font-size:30px; cursor:pointer; color: #f1f1f1;"><i class="fas fa-ellipsis-v"></i></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- https://www.w3schools.com/howto/howto_js_sidenav.asp -->
+    <div id="mySidenav" class="sidenav">
+        <a href="index.html"><i class="fas fa-home"></i>&nbsp;<span class="sideText">Home</span> </a> 
+        <a href="explore.html"><i class="fas fa-hashtag"></i>&nbsp;<span class="sideText">Explore</span></a> 
+        <a href="#"><i class="fas fa-store-alt"></i>&nbsp;<span class="sideText">Market</span></a> 
+        <a href="#"><i class="fab fa-gratipay"></i>&nbsp;<span class="sideText">Adoption</span></a> 
+        <a href="#"><i class="fas fa-headphones-alt"></i>&nbsp;<span class="sideText">Music</span></a> 
+    </div>
+
+ 
+    <div class="container" style="margin-top: 75px;">
+        <div class="grid">
+            <div class="grid-item" style="background-image:url(../res/food1.jpg); width: 235px; height: 355px;"></div>
+            <div class="grid-item" style="background-image:url(../res/hersheymilkshake.jpg); width: 627px; height: 627px;"></div>
+            <div class="grid-item" style="background-image:url(../res/kittens.jpg); width: 512px; height: 339px;"></div>
+            <div class="grid-item" style="background-image:url(../res/nuke.gif); width: 636px; height: 288px;"></div>
+            <div class="grid-item" style="background-image:url(../res/kittens.jpg); width: 512px; height: 339px;"></div>
+        </div>
+    </div>
+    <script>
+        var container = document.querySelector('.grid');
+        var msnry = new Masonry( container, {
+          columnWidth: 50,
+          itemSelector: '.item'
+        });
+        closeNav();
+    </script>
+</body>
+</html>

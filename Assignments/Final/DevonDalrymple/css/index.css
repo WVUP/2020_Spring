@@ -47,8 +47,8 @@
 
 /* Image Size for Cards */
 /* 180 188 */
-.card-image {
-    max-width: 180px;
-    max-height: 188px;
-    /* object-fit: cover; */
+.card-img {
+    width: 180px;
+    height: 188px;
+    object-fit: cover;
 }

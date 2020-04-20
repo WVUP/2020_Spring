@@ -45,3 +45,10 @@
     .sidenav a {font-size: 18px;}
 } 
 
+/* Image Size for Cards */
+/* 180 188 */
+.card-image {
+    max-width: 180px;
+    max-height: 188px;
+    /* object-fit: cover; */
+}

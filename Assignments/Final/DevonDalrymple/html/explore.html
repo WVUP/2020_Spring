@@ -38,21 +38,21 @@
 
     <!-- https://www.w3schools.com/howto/howto_js_sidenav.asp -->
     <div id="mySidenav" class="sidenav">
+        <a href="index.html"><i class="fas fa-map-marked"></i>&nbsp;<span class="sideText">Locality</span> </a> 
         <a href="index.html"><i class="fas fa-home"></i>&nbsp;<span class="sideText">Home</span> </a> 
         <a href="explore.html"><i class="fas fa-hashtag"></i>&nbsp;<span class="sideText">Explore</span></a> 
         <a href="#"><i class="fas fa-store-alt"></i>&nbsp;<span class="sideText">Market</span></a> 
         <a href="#"><i class="fab fa-gratipay"></i>&nbsp;<span class="sideText">Adoption</span></a> 
-        <a href="#"><i class="fas fa-headphones-alt"></i>&nbsp;<span class="sideText">Music</span></a> 
+        <a href="#"><i class="fas fa-headphones-alt"></i>&nbsp;<span class="sideText">Music</span></a>
+        <a href="#"><i class="fas fa-search"></i></i>&nbsp;<span class="sideText"><input type="text" style="width: 75%;" placeholder="Search"></span></a>
+        <a href="#" class="sideProfile"><i class="fas fa-user-circle"></i>&nbsp;<span class="sideText">User</span></a> 
     </div>
 
  
-    <div class="container" style="margin-top: 75px;">
+    <div class="container-fluid" style="margin-top: 75px; margin-left: 12%;">
+    <div class="row">
+        <div class="col-8 col-lg-9">
         <div class="grid">
-            <div class="grid-item" style="background-image:url(../res/food1.jpg); width: 235px; height: 355px;"></div>
-            <div class="grid-item" style="background-image:url(../res/hersheymilkshake.jpg); width: 627px; height: 627px;"></div>
-            <div class="grid-item" style="background-image:url(../res/kittens.jpg); width: 512px; height: 339px;"></div>
-            <div class="grid-item" style="background-image:url(../res/nuke.gif); width: 636px; height: 288px;"></div>
-            <div class="grid-item" style="background-image:url(../res/kittens.jpg); width: 512px; height: 339px;"></div>
             <div class="grid-item" ><img src="../res/the_simpsons_homer_thinking_avatar_picture_52539.png" alt=""></div>
             <div class="grid-item" ><img src="../res/1_6mBhvV9VuhVWzwiJn1mQvg@2x.jpeg" alt=""></div>
             <div class="grid-item" ><img src="../res/4skcofasa1p01.png" alt=""></div>
@@ -68,6 +68,11 @@
             <div class="grid-item" ><img src="../res/keyed.png" alt=""></div>
             <div class="grid-item"><img src="../res/the_simpsons_homer_thinking_avatar_picture_52539.png" alt=""></div>
         </div>
+        </div>
+        <div class="col-4 col-lg-3">
+
+        </div>
+    </div>
     </div>
     <script>
         var container = document.querySelector('.grid');

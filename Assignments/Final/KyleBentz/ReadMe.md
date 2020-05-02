@@ -1,0 +1,1 @@
+This was made with Bootstrop Studio. You can get it for free, along with a bunch of other software through GitHub's education program: https://education.github.com/pack/offers?utm_source=welcome-email&utm_medium=email&utm_campaign=sdp-onboarding&utm_content=em1

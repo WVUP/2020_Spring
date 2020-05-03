@@ -12,34 +12,34 @@ const post2 = {
     tags: '#Milkshake #Food #Hungry #Yes'
 };
 
-const post2 = {
-    imagePath: '../res/hersheymilkshake.jpg',
-    title: 'Check out this Milkshake',
-    message: 'Neat, huh!',
-    tags: '#Milkshake #Food #Hungry #Yes'
-};
-
-const post2 = {
-    imagePath: '../res/hersheymilkshake.jpg',
-    title: 'Check out this Milkshake',
-    message: 'Neat, huh!',
-    tags: '#Milkshake #Food #Hungry #Yes'
-};
-
 const post3 = {
-    imagePath: '../res/hersheymilkshake.jpg',
-    title: 'Check out this Milkshake',
-    message: 'Neat, huh!',
-    tags: '#Milkshake #Food #Hungry #Yes'
+    imagePath: '../res/kittens.jpg',
+    title: 'Kittens for Sale to Highest Bidder',
+    message: 'I just stole.. Found some kittens that I wish to give to whoever wants them!',
+    tags: '#ChatAuction #Sale #AdoptACat'
 };
 
 const post4 = {
-    imagePath: '../res/hersheymilkshake.jpg',
-    title: 'Check out this Milkshake',
-    message: 'Neat, huh!',
-    tags: '#Milkshake #Food #Hungry #Yes'
+    imagePath: '../res/corona.gif',
+    title: 'Local Man says Virus is Government Propaganda, Dies 3 Hours Later',
+    message: 'A man was spotted on top of his car wearing no clothes but a tin foil hat screaming, "this is just to distract us from the aliens"',
+    tags: '#Nuke #OutInTheWild #BearGrylls'
 };
-const posts = [post1, post2];
+
+const post5 = {
+    imagePath: '../res/lava.gif',
+    title: 'DYK: Lava is Hot!',
+    message: 'It is warmer than 100F!',
+    tags: '#DYK #TIL #Science'
+};
+
+const post6 = {
+    imagePath: '../res/kittens.jpg',
+    title: 'Someone Stole my Kittens',
+    message: 'Have you seen them?  This is most recent photo I could find of them.',
+    tags: '#Help #Thief #MissingPet'
+};
+const posts = [post1, post2, post3, post4, post5, post6];
 
 $(document).ready(function () {
     var current = '';

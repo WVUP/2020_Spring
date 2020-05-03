@@ -26,14 +26,14 @@ const post2 = {
     tags: '#Milkshake #Food #Hungry #Yes'
 };
 
-const post2 = {
+const post3 = {
     imagePath: '../res/hersheymilkshake.jpg',
     title: 'Check out this Milkshake',
     message: 'Neat, huh!',
     tags: '#Milkshake #Food #Hungry #Yes'
 };
 
-const post2 = {
+const post4 = {
     imagePath: '../res/hersheymilkshake.jpg',
     title: 'Check out this Milkshake',
     message: 'Neat, huh!',

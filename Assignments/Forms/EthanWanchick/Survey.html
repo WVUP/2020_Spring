@@ -13,7 +13,11 @@
    <center><h1>My Terrible unfunny survey</h1></center>
    <br>
    <br>
-   <center><form >
+
+
+
+   <center><form name="myForm" onsubmit="mySubmit()" >
+
        
        Enter your name: <input  type="text" name="First name" value=" First name" id="firstName" required>
        <input type="text" name="Last name" value="Last name" id="lastName" >
@@ -61,7 +65,7 @@
       
       <button onclick="compile()">Submit</button>
       <br>
-      <div class="display" id="data"></div>
+      <div class="display" id="data">Your responses.</div>
       
  
    </form></center>

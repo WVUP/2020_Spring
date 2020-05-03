@@ -19,11 +19,18 @@ const post3 = {
     tags: '#ChatAuction #Sale #AdoptACat'
 };
 
+const post7 = {
+    imagePath: '../res/nuke.gif',
+    title: 'Nuke Catches Its Prey',
+    message: 'A successful catch, made in just nanoseconds, by the dangerous nuclear bomb"',
+    tags: '#Nuke #OutInTheWild #BearGrylls'
+};
+
 const post4 = {
     imagePath: '../res/corona.gif',
     title: 'Local Man says Virus is Government Propaganda, Dies 3 Hours Later',
     message: 'A man was spotted on top of his car wearing no clothes but a tin foil hat screaming, "this is just to distract us from the aliens"',
-    tags: '#Nuke #OutInTheWild #BearGrylls'
+    tags: '#Aliens #TinFoilGang #News'
 };
 
 const post5 = {
@@ -39,9 +46,13 @@ const post6 = {
     message: 'Have you seen them?  This is most recent photo I could find of them.',
     tags: '#Help #Thief #MissingPet'
 };
-const posts = [post1, post2, post3, post4, post5, post6];
+const posts = [post1, post2, post3, post4, post5, post6, post7];
 
 $(document).ready(function () {
+    loadMore();
+    });
+
+function loadMore() {
     var current = '';
     posts.forEach(e => 
         current +=
@@ -60,6 +71,13 @@ $(document).ready(function () {
                 '</div>' +
             '</div>'        
     );
-    document.getElementById("feed").innerHTML = current;
-    });
+    document.getElementById("feed").innerHTML += current;
+};
 
+// https://www.sitepoint.com/community/t/need-to-fire-javascript-function-when-bottom-of-page-is-reached-not-working/235266/5
+window.onscroll = function(ev) {
+    if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight) {
+      // you're at the bottom of the page
+      this.loadMore();
+    }
+  };

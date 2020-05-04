@@ -61,8 +61,8 @@
             <div class="newFeed" id="newFeedForm">
                 <h2>Create New Post</h2>
                 <form onsubmit="return addPost();">
-                    <input type="text" name="newTitle" id="newTitle" placeholder="Title" pattern="[a-zA-Z !?.,]{3,15}" required>
-                    <input type="text" name="newMessage" id="newMessage" style="width: 50%;" placeholder="Share with us: message text" pattern="[a-zA-Z0-9 !?.,]{5,100}" required>
+                    <input type="text" name="newTitle" id="newTitle" placeholder="Title" pattern="[a-zA-Z !?.,]{3,15}" value="Title" required>
+                    <input type="text" name="newMessage" id="newMessage" style="width: 50%;" placeholder="Share with us: message text" pattern="[a-zA-Z0-9 !?.,]{5,100}" value="Preinserted message that demonstrates the form working. It also allows things like ? and !" required>
                     <label class="filebutton">
                         <i class="far fa-image" style="font-size: 28px;"></i>
                         <!-- https://www.quirksmode.org/dom/inputfile.html - Get rid of the ugly button -->
@@ -71,12 +71,27 @@
                     </label>
                     <!-- https://stackoverflow.com/questions/42050259/regex-for-set-of-hashtags - I had no clue how to do a regex for hashtags -->
                     <!-- pattern="/^(#[a-zA-Z0-9]+,? *)*#[a-zA-Z0-9 ]+$/" --> 
-                    <input type="text" name="newTags" id="newTags" placeholder="#tags seperated by a space" style="width: 18%;" required>
+                    <input type="text" name="newTags" id="newTags" placeholder="#tags seperated by a space" value="#Neat #Message" style="width: 18%;" required>
                     <input type="submit" value="Post to Feed">
                 </form>
             </div>
             <br>
-        
+            <div class="col-8">
+                <div class="topBox">
+                    <pre style="font-size: 14px; text-align: left;">
+This was quickly thrown together to understand the form easier
+Title - [a-zA-Z !?.,]{3,15} - Needs 3 to 15 letters (spaces are allowed)
+Message - [a-zA-Z0-9 !?.,]{5,100} - Needs 5 to 100 letters or numbers or simple punctuation (spaces are allowed)
+Image - Any image file type including .gif
+Tags - /^(#[a-zA-Z0-9]+,? *)*#[a-zA-Z0-9 ]+$/ - Honestly I don't know how this makes hashtags work, I need to learn more about regexes 
+The tags are looking for hashtags seperated by spaces
+                    </pre>
+                </div>
+              </div>
+              <div class="col-4">
+                <!-- Used to give the other one proper limits -->
+              </div>
+
             <!-- Javascript Do Your Thing -->
 
         </div>

@@ -47,7 +47,7 @@ function filterFunction() {
     }
   }
 
-  
+// https://www.w3schools.com/howto/howto_js_portfolio_filter.asp
 function filterSelection(c) {
   var x, i;
   x = document.getElementsByClassName("spacedCards");

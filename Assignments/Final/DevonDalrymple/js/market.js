@@ -11,6 +11,7 @@ $(document).ready(function () {
         this.className += " active";
   });
   }
+  filterSelection('all');
 });
 // https://stackoverflow.com/questions/26178441/how-to-toggle-a-highlighted-selected-item-in-a-group-list - Refactored for below
 $(function(){ 
@@ -47,7 +48,6 @@ function filterFunction() {
   }
 
   
-  filterSelection("all") // Execute the function and show all columns
 function filterSelection(c) {
   var x, i;
   x = document.getElementsByClassName("spacedCards");

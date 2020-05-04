@@ -94,9 +94,34 @@ $("#newImage").click(function() { // bCheck is a input type button
 
 // Form Validation and Entry
 function addPost() {
-    var newImagePath
-    var newTitle
-    var newMessage
-    var newTags
+    var newImagePath;
+    var newTitle;
+    var newMessage;
+    var newTags;
+    if (document.getElementById("newImage").files[0] == null) {
+        newImagePath = '../res/no-image-1.jpg';
+    }
+    else {
+        // https://stackoverflow.com/questions/3814231/loading-an-image-to-a-img-from-input-file
+        // https://stackoverflow.com/questions/2395765/store-images-in-javascript-object/2395830
+        // var reader = new FileReader();
+        // reader.onload = function (e) {
+        //     var img = new Image();
+        //     img.src = e.target.result;
+        // }
+        // newImagePath = reader.readAsDataURL(document.getElementById("newImage").files[0]);
+        newImagePath = '../res/no-image-1.jpg'; // Placeholder image, could not get the above to function
+    }
+    newTitle = document.getElementById("newTitle").value;
+    newMessage = document.getElementById("newMessage").value;
+    newTags = document.getElementById("newTags").value;
+    var newPost;
+    newPost = {
+        imagePath: newImagePath,
+        title: newTitle,
+        message: newMessage,
+        tags: newTags
+    }
+    posts.push(newPost);
     return false;
 }

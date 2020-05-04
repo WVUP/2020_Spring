@@ -64,7 +64,8 @@
                         <span><input type="file" name="newImage" id="newImage" accept="image/*" data-type='image' style="position: relative; z-index: 2; width: 1px;"></span>
                     </label>
                     <!-- https://stackoverflow.com/questions/42050259/regex-for-set-of-hashtags - I had no clue how to do a regex for hashtags -->
-                    <input type="text" name="newTags" id="newTags" placeholder="#tags seperated by a space" style="width: 18%;" pattern="/^(#[a-zA-Z0-9]+,? *)*#[a-zA-Z0-9 ]+$/" required>
+                    <!-- pattern="/^(#[a-zA-Z0-9]+,? *)*#[a-zA-Z0-9 ]+$/" --> 
+                    <input type="text" name="newTags" id="newTags" placeholder="#tags seperated by a space" style="width: 18%;" required>
                     <input type="submit" value="Post to Feed">
                 </form>
             </div>

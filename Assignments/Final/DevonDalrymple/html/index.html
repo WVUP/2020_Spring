@@ -51,6 +51,21 @@
     <div class="container-fluid" style="margin-top: 75px; margin-left: 12%;">
         <div class="row">
         <div class="col-8" id="feed">
+
+            <div class="newFeed" id="newFeedForm">
+                <h2>Insert New Post</h2>
+                <form action="">
+                    <input type="text" name="newTitle" id="newTitle" placeholder="Title">
+                    <input type="text" name="newMessage" id="newMessage" style="width: 50%;" placeholder="Message Text">
+                    <label class="filebutton">
+                        <i class="far fa-image" style="font-size: 28px;"></i>
+                        <!-- https://www.quirksmode.org/dom/inputfile.html - Get rid of the ugly button -->
+                        <span><input type="file" name="newImage" id="newImage" style="position: relative; z-index: 2; width: 1px;"></span>
+                    </label>
+                    
+                </form>
+            </div>
+            <br>
         
             <!-- Javascript Do Your Thing -->
 

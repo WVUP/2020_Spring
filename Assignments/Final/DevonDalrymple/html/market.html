@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Activity Feed</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/market.css">
     <link rel="stylesheet" href="../css/allpages.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/716ff72cd3.js" crossorigin="anonymous"></script>
-    <script src="../js/index.js"></script>
+    <script src="../js/market.js"></script>
     <script src="../js/allpages.js"></script>
 </head>
 <body>
@@ -49,126 +49,66 @@
 
  
     <div class="container-fluid" style="margin-top: 75px; margin-left: 12%;">
+      
         <div class="row">
-        
+            <div class="col-8">
+              <div class="marketBox">Market</div>
+            </div>
+            <div class="col-4">
+              <!-- Used to give the other one proper limits -->
+            </div>
             <div class="col-2">
-
+              <div class="list-group" role="tablist" id="list-tab">
+                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-shopping-cart"></i>&nbsp;Browse</a>
+                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-microchip"></i>&nbsp;Electronics</a>
+                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-seedling"></i>&nbsp;Home and Garden</a>
+                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-guitar"></i>&nbsp;Hobbies</a>
+                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-tshirt"></i>&nbsp;Clothing</a>
+                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-futbol"></i>&nbsp;Entertainment</a>
+                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-child"></i>&nbsp;Family</a>
+                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-tags"></i>&nbsp;Deals</a>
+              </div>
             </div>
 
             <div class="col-6 container-fluid">
             <div class="row">
                 
-                <div class="col4">
-                    <div class="card" style="width: 18rem;">
+                <!-- <div class="col4"> -->
+                    <div class="card spacedCards" style="width: 18rem;">
                         <img src="../res/hersheymilkshake.jpg" class="card-img-top" alt="G">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                       </div>
-                      <div class="card" style="width: 18rem;">
+                      <div class="card spacedCards" style="width: 18rem;">
                         <img src="../res/hersheymilkshake.jpg" class="card-img-top" alt="G">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                       </div>
-                      <div class="card" style="width: 18rem;">
+                      <div class="card spacedCards" style="width: 18rem;">
                         <img src="../res/hersheymilkshake.jpg" class="card-img-top" alt="G">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                       </div>
-                      <div class="card" style="width: 18rem;">
+                      <div class="card spacedCards" style="width: 18rem;">
                         <img src="../res/hersheymilkshake.jpg" class="card-img-top" alt="G">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                       </div>
-                      <div class="card" style="width: 18rem;">
+                      <div class="card spacedCards" style="width: 18rem;">
                         <img src="../res/hersheymilkshake.jpg" class="card-img-top" alt="G">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                       </div>
-                </div>
-                <div class="col4">
-                    <div class="card" style="width: 18rem;">
-                        <img src="../res/hersheymilkshake.jpg" class="card-img-top" alt="G">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                      </div>
-                      <div class="card" style="width: 18rem;">
-                        <img src="../res/hersheymilkshake.jpg" class="card-img-top" alt="G">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                      </div>
-                      <div class="card" style="width: 18rem;">
-                        <img src="../res/hersheymilkshake.jpg" class="card-img-top" alt="G">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                      </div>
-                      <div class="card" style="width: 18rem;">
-                        <img src="../res/hersheymilkshake.jpg" class="card-img-top" alt="G">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                      </div>
-                      <div class="card" style="width: 18rem;">
-                        <img src="../res/hersheymilkshake.jpg" class="card-img-top" alt="G">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                      </div>
-                </div>
-                <div class="col4">
-                    <div class="card" style="width: 18rem;">
-                        <img src="../res/hersheymilkshake.jpg" class="card-img-top" alt="G">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                      </div>
-                      <div class="card" style="width: 18rem;">
-                        <img src="../res/hersheymilkshake.jpg" class="card-img-top" alt="G">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                      </div>
-                      <div class="card" style="width: 18rem;">
-                        <img src="../res/hersheymilkshake.jpg" class="card-img-top" alt="G">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                      </div>
-                      <div class="card" style="width: 18rem;">
-                        <img src="../res/hersheymilkshake.jpg" class="card-img-top" alt="G">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                      </div>
-                      <div class="card" style="width: 18rem;">
-                        <img src="../res/hersheymilkshake.jpg" class="card-img-top" alt="G">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                      </div>
-                </div>
 
             </div>
             </div>

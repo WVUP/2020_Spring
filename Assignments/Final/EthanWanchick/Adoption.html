@@ -1,0 +1,281 @@
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="final.css">
+    <script src="https://kit.fontawesome.com/8ae8b67c8d.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: darkslategray;">
+    <h1 style="color: whitesmoke;" id="locator28" >Welcome to the adoption fourm!</h1>
+    
+    <style>
+        body {font-family: Arial, Helvetica, sans-serif;}
+        
+        /* Full-width input fields */
+        input[type=text], input[type=password] {
+          width: 100%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px solid #ccc;
+          box-sizing: border-box;
+        }
+        
+        /* Set a style for all buttons */
+        button {
+          background-color: gray;
+          color: black;
+          border: solid black;
+          padding: 14px 20px;
+          margin: 8px 0;
+          border: none;
+          cursor: pointer;
+          width: 100%;
+        }
+        
+        button:hover {
+          opacity: 0.8;
+        }
+        
+        /* Extra styles for the cancel button */
+        .cancelbtn {
+          width: auto;
+          padding: 10px 18px;
+          background-color: #f44336;
+        }
+        
+        /* Center the image and position the close button */
+        .imgcontainer {
+          text-align: center;
+          margin: 24px 0 12px 0;
+          position: relative;
+        }
+        
+        img.avatar {
+          width: 40%;
+          border-radius: 50%;
+        }
+        
+        .container {
+          padding: 16px;
+        }
+        
+        span.psw {
+          float: right;
+          padding-top: 16px;
+        }
+        
+        /* The Modal (background) */
+        .modal {
+          display: none; /* Hidden by default */
+          position: fixed; /* Stay in place */
+          z-index: 1; /* Sit on top */
+          left: 0;
+          top: 0;
+          width: 100%; /* Full width */
+          height: 100%; /* Full height */
+          overflow: auto; /* Enable scroll if needed */
+          background-color: rgb(0,0,0); /* Fallback color */
+          background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+          padding-top: 60px;
+        }
+        
+        /* Modal Content/Box */
+        .modal-content {
+          background-color:gray;
+          margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+          border: 1px solid #888;
+          width: 80%; /* Could be more or less, depending on screen size */
+        }
+        
+        /* The Close Button (x) */
+        .close {
+          position: absolute;
+          right: 25px;
+          top: 0;
+          color: #000;
+          font-size: 35px;
+          font-weight: bold;
+        }
+        
+        .close:hover,
+        .close:focus {
+          color: red;
+          cursor: pointer;
+        }
+        
+        /* Add Zoom Animation */
+        .animate {
+          -webkit-animation: animatezoom 0.6s;
+          animation: animatezoom 0.6s
+        }
+        
+        @-webkit-keyframes animatezoom {
+          from {-webkit-transform: scale(0)} 
+          to {-webkit-transform: scale(1)}
+        }
+          
+        @keyframes animatezoom {
+          from {transform: scale(0)} 
+          to {transform: scale(1)}
+        }
+        
+        /* Change styles for span and cancel button on extra small screens */
+        @media screen and (max-width: 300px) {
+          span.psw {
+             display: block;
+             float: none;
+          }
+          .cancelbtn {
+             width: 100%;
+          }
+        }
+        </style>
+        </head>
+        <body>
+        <div class="container-fluid">
+      
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <div class="sidenav">
+          <a href="final.html"><img src="https://img.icons8.com/pastel-glyph/64/000000/shop.png"/> <br> Home</a>
+          <a href="Adoption.html"><img src="https://img.icons8.com/pastel-glyph/64/000000/like--v2.png"/><br>Adoptions</a>
+          <a href="#"><img src="https://img.icons8.com/pastel-glyph/64/000000/headphones.png"/><br> Music</a>
+          <a href="#"><img src="https://img.icons8.com/pastel-glyph/64/000000/search--v2.png"/><br> Search</a>
+          
+        </div>
+        </div>
+        
+        
+        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" id="locator17">Start the Adoption Process</button>
+        
+        <div id="id01" class="modal">
+          
+          <form class="modal-content animate" action="/action_page.php" method="post">
+            <div class="imgcontainer">
+              <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            </div>
+        
+            <div class="container">
+              <label for="uname"><b>Full Name</b></label>
+              <input type="text" placeholder="Enter Full Name" name="uname" required id="Name">
+              <b>Cellphone</b><br>
+              <input type="tel"placeholder="123-345-6789" name="cellphone" required id="phone"><br>
+                <br><b>Pet experence</b><br>
+              <input type="radio" name="pet experence" id="" value="none">
+                <label for="none">None</label><br>
+                <input type="radio" name="pet experence" value="a little bit">
+                <label for="a little bit">A little bit</label><br>
+                <input type="radio" name="pet experence" value="Some">
+                <label for="Some">Some</label><br>
+                <input type="radio" name="A lot" value="A lot">
+                <label for="A lot">A lot</label><br>
+                <b>What type of adoption will you be doing?</b><br>
+                <select name="What type of adoption will you be doing?" id="ADP select">
+                    <option value="null"></option>
+                    <option value="Permanent">Permanent Adoption</option>
+                    <option value="Fostering">Fostering An Animal</option>
+                    
+                </select><br>
+                <b>What type of animal are you wanting to adopt?</b>
+                <select name="" id="animal type">
+                <option value=""></option>
+                <option value="Cat">Cat</option>
+                <option value="Kitten">Kitten</option>
+                <option value="Older Cat">Older Cat</option>
+                <option value="Puppy">Puppy</option>
+                <option value="Dog">Dog</option>
+                <option value="Older Dog">Older Dog</option>
+                </select><br>
+                <b>Do you have any prefrences on gender?</b><br>
+                <input type="radio" name="Gender" value="Male">
+                <label for="Male">Male</label><br>
+                <input type="radio" name="" value="Female">
+                <label for="Female">Female</label><br>
+                <input type="radio" value="NA">
+                <label for="NA">No Prefrence</label><br>
+              <button type="submit">Apply For Adoption</button>
+            </div>
+           
+            <div class="container" style="background-color:#f1f1f1">
+              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            </div>
+          </form>
+        </div>
+        
+        <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        </script>
+    </script>
+<div>
+    <div class="card" style="width: 18rem;" id="locator18">
+        <img src="https://assets.marthastewart.com/styles/wmax-350/d30/dog-in-blanket-getty-0320-opus/dog-in-blanket-getty-0320-opus_sq.jpg?itok=2j8UnCql" class="card-img-top" alt="...">
+        <div class="card-body" style="background-color: #1c3a5e;">
+          <h5 class="card-title" style="color: whitesmoke;"></h5>
+          <p class="card-text" style="color: whitesmoke;">Hi my name is Stella! I'm 2 years old and looking for a family</p>
+          <a href="doggo.html" class="btn btn-primary">Stella's Profile</a>
+        </div>
+        <div class="card" style="width: 18rem;" id="locator19">
+            <img src="https://specials-images.forbesimg.com/imageserve/59ca3f6531358e542c02dfa0/416x416.jpg?background=000000&cropX1=335&cropX2=1333&cropY1=1014&cropY2=2013" class="card-img-top" alt="...">
+            <div class="card-body" style="background-color: #1c3a5e;">
+              <h5 class="card-title" style="color: whitesmoke;"></h5>
+              <p class="card-text" style="color: whitesmoke;">Hey! Check us out on youtube for information on new cool stuff </p>
+              <a href="#" class="btn btn-primary">Go to Youtube</a>
+            </div>       
+            <div class="card" style="width: 18rem;" id="locator20">
+                <img src="https://p.sharinpix.com/3/1090d1d/YXBwLnNoYXJpbnBpeC5jb20vaW1hZ2VfZXh0ZXJuYWxfdXJscy8xYTI5ZjRmMS0wNTgxLTQ5YTgtYmM2Yi0yYTg4ZTRkMmM5Y2I/1a29f4f1-0581-49a8-bc6b-2a88e4d2c9cb.jpg" class="card-img-top" alt="...">
+                <div class="card-body" style="background-color: #1c3a5e;">
+                  <h5 class="card-title" style="color: whitesmoke;"></h5>
+                  <p class="card-text" style="color: whitesmoke;">Hey! Check us out on youtube for information on new cool stuff </p>
+                  <a href="#" class="btn btn-primary">Go to Youtube</a>
+                </div>
+                <div class="card" style="width: 18rem;" id="locator21">
+                    <img src="https://pet-uploads.adoptapet.com/5/8/7/352561196.jpg" class="card-img-top" alt="...">
+                    <div class="card-body" style="background-color: #1c3a5e;">
+                      <h5 class="card-title" style="color: whitesmoke;"></h5>
+                      <p class="card-text" style="color: whitesmoke;">Hey! Check us out on youtube for information on new cool stuff </p>
+                      <a href="#" class="btn btn-primary">Go to Youtube</a>
+                    </div>
+                    <div class="card" style="width: 18rem;" id="locator22">
+                        <img src="https://res.cloudinary.com/value-penguin/image/upload/c_lfill,dpr_1.0,f_auto,h_1600,q_auto,w_1600/v1/other/what-is-pet-insurance" class="card-img-top" alt="...">
+                        <div class="card-body" style="background-color: #1c3a5e;">
+                          <h5 class="card-title" style="color: whitesmoke;"></h5>
+                          <p class="card-text" style="color: whitesmoke;">Hey! Check us out on youtube for information on new cool stuff </p>
+                          <a href="#" class="btn btn-primary">Go to Youtube</a>
+                        </div>
+                        <div class="card" style="width: 18rem;" id="locator23">
+                            <img src="https://lh3.googleusercontent.com/proxy/-Fe5ctq9ifipR61VKUTrt5_cAoUs7JQXtgrZRPaqI3DprtxcTeIFqqTcLJQztotf6mbgRn3KOUcRiyeYsrwk7ko6HSO3njZB7MZPv2jKrYkYwbeI2kORUvUgF_ILYcDWMehP6GYEitYypQiH" class="card-img-top" alt="...">
+                            <div class="card-body" style="background-color: #1c3a5e;">
+                              <h5 class="card-title" style="color: whitesmoke;"></h5>
+                              <p class="card-text" style="color: whitesmoke;">Hey! Check us out on youtube for information on new cool stuff </p>
+                              <a href="#" class="btn btn-primary">Go to Youtube</a>
+                            </div>
+                            <div class="card" style="width: 18rem;" id="locator24">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTKuwS8SARFgILXMtULX7mB9vcR9ykiLJc08YJMDJGM6w8rIWlF&usqp=CAU" class="card-img-top" alt="...">
+                                <div class="card-body" style="background-color: #1c3a5e;">
+                                  <h5 class="card-title" style="color: whitesmoke;"></h5>
+                                  <p class="card-text" style="color: whitesmoke;">Hey! Check us out on youtube for information on new cool stuff </p>
+                                  <a href="#" class="btn btn-primary">Go to Youtube</a>
+                                </div>
+                                <div class="card" style="width: 18rem;" id="locator25">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR2zAHYEzpLS2Vzsf0MLS04KKNDkpR49BOUexNk5ePwzCoGo_kD&usqp=CAU" class="card-img-top" alt="...">
+                                    <div class="card-body" style="background-color: #1c3a5e;">
+                                      <h5 class="card-title" style="color: whitesmoke;"></h5>
+                                      <p class="card-text" style="color: whitesmoke;">Hey! Check us out on youtube for information on new cool stuff </p>
+                                      <a href="#" class="btn btn-primary">Go to Youtube</a>
+                                    </div>                  
+</div>
+</body>
+</html>

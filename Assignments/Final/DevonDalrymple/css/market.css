@@ -3,15 +3,6 @@
     display: none;
 }
 
-.marketBox {
-    width: 100%;
-    background-color: #fdfdfd;
-    border: 1px solid #090909;
-    font-size: 36px;
-    font-weight: bold;
-    text-align: center;
-}
-
 .list-group a {
     font-size: 20px;
     word-spacing: 3px;

@@ -1,6 +1,5 @@
 .spacedCards {
     margin: 12px;
-    display: inline;
 }
 
 .marketBox {
@@ -15,4 +14,10 @@
 .list-group a {
     font-size: 20px;
     word-spacing: 3px;
+}
+
+.marketLink {
+    font-size: 32px;
+    text-decoration: none;
+    color: #111111;
 }

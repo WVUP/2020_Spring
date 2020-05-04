@@ -24,7 +24,7 @@
                 </div>
                 <div class="col-10">
                     <form class="form-inline" style="width: 100%;">
-                    <input class="form-control mr-sm-2" style="width: 1500px;" type="search" placeholder="Search" aria-label="Search">
+                    <input class="form-control mr-sm-2" style="width: 1500px;" type="search" onkeyup="filterFunction()" id="mainSearch" placeholder="Search" aria-label="Search">
                     </form>
                 </div>
                 <div class="col-1" style="word-spacing: 30px; border-left:1px solid rgba(250, 250, 250, .6);">
@@ -57,9 +57,9 @@
             <div class="col-4">
               <!-- Used to give the other one proper limits -->
             </div>
-            <div class="col-2">
+            <div class="col-2" style="background-color: white; margin-top: 5px; padding-top: 10px;">
               <div class="list-group" role="tablist" id="list-tab">
-                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-shopping-cart"></i>&nbsp;Browse</a>
+                <a href="#" class="list-group-item list-group-item-action active"><i class="fas fa-shopping-cart"></i>&nbsp;Browse</a>
                 <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-microchip"></i>&nbsp;Electronics</a>
                 <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-seedling"></i>&nbsp;Home and Garden</a>
                 <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-guitar"></i>&nbsp;Hobbies</a>
@@ -68,41 +68,47 @@
                 <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-child"></i>&nbsp;Family</a>
                 <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-tags"></i>&nbsp;Deals</a>
               </div>
+              <br>
+              <button type="button" class="btn btn-dark btn-lg" style="font-size: 38px; width: 100%;"><i class="fas fa-money-bill-wave"></i>&nbsp;SELL</button>
+              <br>
+              <a href="#" class="marketLink">Items for Sale</a><br>
+              <a href="#" class="marketLink">Saved Items</a><br>
+              <a href="#" class="marketLink">Group</a>
             </div>
 
             <div class="col-6 container-fluid">
-            <div class="row">
+            <div class="row" id="market-goods">
                 
                 <!-- <div class="col4"> -->
-                    <div class="card spacedCards" style="width: 18rem;">
+                    <div class="card spacedCards" style="width: 18rem;" title="Cat">
                         <img src="../res/hersheymilkshake.jpg" class="card-img-top" alt="G">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                       </div>
-                      <div class="card spacedCards" style="width: 18rem;">
+                      <div class="card spacedCards" style="width: 18rem;" title="Cat">
                         <img src="../res/hersheymilkshake.jpg" class="card-img-top" alt="G">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                       </div>
-                      <div class="card spacedCards" style="width: 18rem;">
+                      <div class="card spacedCards" title="Dog" style="width: 18rem;" title="Cat">
                         <img src="../res/hersheymilkshake.jpg" class="card-img-top" alt="G">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                       </div>
-                      <div class="card spacedCards" style="width: 18rem;">
+                      <div class="card spacedCards" title="Dog" style="width: 18rem;" title="Cat">
                         <img src="../res/hersheymilkshake.jpg" class="card-img-top" alt="G">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                       </div>
-                      <div class="card spacedCards" style="width: 18rem;">
+                      <div class="card spacedCards" style="width: 18rem;" title="Cat">
                         <img src="../res/hersheymilkshake.jpg" class="card-img-top" alt="G">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>

@@ -1,52 +1,52 @@
 // https://www.tutorialrepublic.com/faq/how-to-assign-block-of-html-code-to-a-javascript-variable.php
-const post1 = {
+var post1 = {
     imagePath: '../res/food1.jpg',
     title: 'Tasty Food',
     message: 'If it looks too good to be true, it probably is.  Here\'s how to make something remotely like it.',
     tags: '#Food ## #### #EasyFood'
 };
-const post2 = {
+var post2 = {
     imagePath: '../res/hersheymilkshake.jpg',
     title: 'Check out this Milkshake',
     message: 'Neat, huh!',
     tags: '#Milkshake #Food #Hungry #Yes'
 };
 
-const post3 = {
+var post3 = {
     imagePath: '../res/kittens.jpg',
     title: 'Kittens for Sale to Highest Bidder',
     message: 'I just stole.. Found some kittens that I wish to give to whoever wants them!',
     tags: '#ChatAuction #Sale #AdoptACat'
 };
 
-const post7 = {
+var post7 = {
     imagePath: '../res/nuke.gif',
     title: 'Nuke Catches Its Prey',
     message: 'A successful catch, made in just nanoseconds, by the dangerous nuclear bomb"',
     tags: '#Nuke #OutInTheWild #BearGrylls'
 };
 
-const post4 = {
+var post4 = {
     imagePath: '../res/corona.gif',
     title: 'Local Man says Virus is Government Propaganda, Dies 3 Hours Later',
     message: 'A man was spotted on top of his car wearing no clothes but a tin foil hat screaming, "this is just to distract us from the aliens"',
     tags: '#Aliens #TinFoilGang #News'
 };
 
-const post5 = {
+var post5 = {
     imagePath: '../res/lava.gif',
     title: 'DYK: Lava is Hot!',
     message: 'It is warmer than 100F!',
     tags: '#DYK #TIL #Science'
 };
 
-const post6 = {
+var post6 = {
     imagePath: '../res/kittens.jpg',
     title: 'Someone Stole my Kittens',
     message: 'Have you seen them?  This is most recent photo I could find of them.',
     tags: '#Help #Thief #MissingPet'
 };
-const posts = [post1, post2, post3, post4, post5, post6, post7];
+var posts = [post1, post2, post3, post4, post5, post6, post7];
 
 $(document).ready(function () {
     loadMore();
@@ -81,3 +81,22 @@ window.onscroll = function(ev) {
       this.loadMore();
     }
   };
+
+$("#newImage").click(function() { // bCheck is a input type button
+    var fileName = $("#file1").val();
+
+    if(fileName) { // returns true if the string is not empty
+        alert(fileName + " was selected");
+    } else { // no file was selected
+        alert("no file selected");
+    }
+});
+
+// Form Validation and Entry
+function addPost() {
+    var newImagePath
+    var newTitle
+    var newMessage
+    var newTags
+    return false;
+}

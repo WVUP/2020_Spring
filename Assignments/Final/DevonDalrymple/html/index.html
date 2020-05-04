@@ -53,16 +53,19 @@
         <div class="col-8" id="feed">
 
             <div class="newFeed" id="newFeedForm">
-                <h2>Insert New Post</h2>
-                <form action="">
-                    <input type="text" name="newTitle" id="newTitle" placeholder="Title">
-                    <input type="text" name="newMessage" id="newMessage" style="width: 50%;" placeholder="Message Text">
+                <h2>Create New Post</h2>
+                <form onsubmit="return addPost();">
+                    <input type="text" name="newTitle" id="newTitle" placeholder="Title" pattern="[a-zA-Z !?.,]{3,15}" required>
+                    <input type="text" name="newMessage" id="newMessage" style="width: 50%;" placeholder="Share with us: message text" pattern="[a-zA-Z0-9 !?.,]{5,100}" required>
                     <label class="filebutton">
                         <i class="far fa-image" style="font-size: 28px;"></i>
                         <!-- https://www.quirksmode.org/dom/inputfile.html - Get rid of the ugly button -->
-                        <span><input type="file" name="newImage" id="newImage" style="position: relative; z-index: 2; width: 1px;"></span>
+                        <!-- https://stackoverflow.com/questions/29805909/jquery-how-to-check-if-uploaded-file-is-an-image-without-checking-extensions - Allow images only -->
+                        <span><input type="file" name="newImage" id="newImage" accept="image/*" data-type='image' style="position: relative; z-index: 2; width: 1px;"></span>
                     </label>
-                    
+                    <!-- https://stackoverflow.com/questions/42050259/regex-for-set-of-hashtags - I had no clue how to do a regex for hashtags -->
+                    <input type="text" name="newTags" id="newTags" placeholder="#tags seperated by a space" style="width: 18%;" pattern="/^(#[a-zA-Z0-9]+,? *)*#[a-zA-Z0-9 ]+$/" required>
+                    <input type="submit" value="Post to Feed">
                 </form>
             </div>
             <br>

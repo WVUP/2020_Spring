@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex'em</title>
+
+  <style>
+    .container {
+      display: flex;
+      margin: 20px 0;
+    }
+
+    .container div {
+      height: 300px;
+      width: 300px;
+      background-color: blue;
+    }
+
+    .container div:nth-child(2) {
+      filter: hue-rotate(90deg);
+    }
+
+    .container div:nth-child(3) {
+      filter: hue-rotate(-90deg);
+    }
+
+    .container.second {
+      flex-direction: column;
+    }
+
+    .container.third {
+      flex-direction: column-reverse;
+    }
+
+    .container.forth {
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container first">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <div class="container second">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <div class="container third">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <div class="container forth">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</body>
+
+</html>

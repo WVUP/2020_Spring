@@ -1,0 +1,30 @@
+.profilebanner
+{
+    width: 90%;
+    height: 400px;
+    object-fit: cover;
+    padding-left: 134px;
+    position: absolute;
+}
+.profilepic
+{
+    border-radius: 100%;
+    height: 200px;
+    object-fit: cover;
+    width: 200px;
+    border-color: black;
+    border-style: solid;
+    padding: 10;
+}
+
+.musicbox
+{
+    background-color: lightgray;
+    width: 400px;
+    height: 220px;
+    margin-left: 65%;
+    margin-top: -10%;
+    border-radius: 15%;
+    position: absolute;
+    margin-top: 400px;
+}

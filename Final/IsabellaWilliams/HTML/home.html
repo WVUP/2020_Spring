@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>StoryBoard: Home</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/allpages.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/716ff72cd3.js" crossorigin="anonymous"></script>
+    <script src="../js/home.js"></script>
+    <script src="../js/allpages.js"></script>
+</head>
+<body style="overflow-x: hidden;">
+    
+
+    <!-- https://www.w3schools.com/howto/howto_js_sidenav.asp -->
+    <div id="mySidenav" class="sidenav">
+            <a  onclick="toggleNav()" style="padding-left: 10.5px; padding-right: 1%;"><img src="../RES/smalllogo.png" alt="small logo" class="smalllogoimage"><span style=" color: white;" onclick="toggleNav()" class="sideText fulllogo">StoryBoard</span> </a> 
+        <a href="../HTML/home.html"class="sideselections"><i class="fas fa-home fa-lg"></i>&nbsp; &nbsp;<span class="sideText topoptionstext">Home</span> </a> 
+        <a href="../HTML/explore.html" class="sideselections"><i class="fas fa-hashtag fa-lg"></i>&nbsp; &nbsp;<span class="sideText topoptionstext">Explore</span></a> 
+        <a href="#" class="sideselections"><i class="fas fa-store-alt fa-lg"></i>&nbsp; &nbsp;<span class="sideText topoptionstext">Market</span></a> 
+        <a href="#" class="sideselections"><i class="fab fa-gratipay fa-lg"></i>&nbsp; &nbsp;<span class="sideText topoptionstext">Adoption</span></a> 
+        <a href="#" class="sideselections"><i class="fas fa-headphones-alt fa-lg"></i>&nbsp; &nbsp;<span class="sideText topoptionstext">Music</span></a>
+        <a  class="sideselections"><button class="btn" style="padding-left: 5px;"><i class="fas fa-search fa-lg" style="color: white;"></i></button></i><span class="sideText topoptionstext"><input type="text" style="width: 70%; height: 50%;" placeholder="Search"></span></a>
+        <a href="../HTML/profile.html" class="sideProfile"><img src="../res/belle.jpg" alt="" class="profileImg"> </i>&nbsp; &nbsp;<span class="sideText">Belle</span></a> 
+    </div>
+
+ 
+    <div style="padding-bottom: 10px; padding-top: 10px;">
+    <div class="container-fluid" style=" padding-left: 7.21%;">
+        <div class="row">
+            <div class="col-11" id="feed">
+                <div class="newFeed card mb-3" id="newFeedForm" style="padding: 5px; padding-left: 0px; margin-left: 0%;">
+        <form onsubmit="return addPost();">
+                    <input class="form-control mr-sm-2" style="width: 1400px; font-size: x-large; margin: 5px" type="text" name="newTitle" id="newTitle" placeholder="Title" pattern="[a-zA-Z !?.,]{3,15}" value="Title" required>
+                    <input class="form-control mr-sm-2"style="resize: none; width: 1400px; font-size: x-large; height: 150px;margin: 5px;" name="newMessage" id="newMessage" placeholder="Share with us: " pattern="[a-zA-Z0-9 !?.,]{5,100}" value="Share with us:" required>
+                    <label class="filebutton" style="margin: 5px;">
+                        <i class="far fa-image fa-lg" style="font-size: 28px;"></i>
+                        <span><input type="file" name="newImage" id="newImage" accept="image/*" data-type='image' style="position: relative; z-index: 2; width: 1px;"></span>
+                    </label>
+                        <input class="form-control mr-sm-2"  type="text" name="newTags" id="newTags" placeholder="#tags seperated by a space" value="#Neat #Message" style="width: 18%; margin: 5px;" required>
+                         
+                            <input type="submit" class="btn-dark" value="Post to Feed" style="margin: 5px;">
+                    
+        </form> 
+    </div>
+    <div class="col-4">
+        <!-- the addtional post-->
+      </div>
+    </div>
+
+        <div class="col-4">
+            <!-- the addtional post-->
+          </div>
+    
+    <div style="margin-left: 78%; position: fixed; margin-right: 0em;">
+    <div class="col-20">
+
+        <div class="rightBox">
+            <h1>#Tags</h1>
+            <p>
+                #Music <br>
+                #Adoption<br>
+                #WebDesign <br>
+                #College <br>
+            </p>
+        </div>
+
+        <div class="rightBox">
+            <h1>Online</h1>
+            <div  class="online">
+            <div style="text-align: left; color: white; font-size: 200%; line-height: 2; padding: 1%;">
+                <img src="../res/ben.jpg" alt="" class="profileImgofFriends"> &nbsp; &nbsp;Ben <br>
+                <img src="../res/jason.jpg" alt="" class="profileImgofFriends"> &nbsp; &nbsp;Jason<br>
+                <img src="../res/josh.jpg" alt="" class="profileImgofFriends"> &nbsp; &nbsp;Josh <br>
+                <img src="../res/Kiki.jpg" alt="" class="profileImgofFriends"> &nbsp; &nbsp;Kiki<br>
+                <img src="../res/lilly.png" alt="" class="profileImgofFriends"> &nbsp; &nbsp;Lilly<br>
+                <img src="../res/lisa.jpg" alt="" class="profileImgofFriends"> &nbsp; &nbsp;Lisa<br>
+                <img src="../res/maria.jpg" alt="" class="profileImgofFriends"> &nbsp; &nbsp;Marina<br>
+                <img src="../res/matthew.jpg" alt="" class="profileImgofFriends"> &nbsp; &nbsp;Matthew<br>
+                <img src="../res/Nick.jpg" alt="" class="profileImgofFriends"> &nbsp; &nbsp;Nick<br>
+                <img src="../res/tiffany.jpg" alt="" class="profileImgofFriends"> &nbsp; &nbsp;Tiffany<br>
+            </nav>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+</div>
+<button type="button" class="btn btn-dark" style="margin-left: 8%;" onclick="loadMore()">Load More</button>
+</div>
+
+    </div>
+    <script>
+        closeNav();
+    </script>
+    
+    <div id="result"></div>
+
+</body>
+</html>

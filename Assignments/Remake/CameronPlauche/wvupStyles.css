@@ -1,0 +1,17 @@
+.header {
+    padding: 20px 120px;
+    background: #fff;
+    color: white;
+    font-size: 14px;
+    display: block;
+    margin: auto;
+}
+
+.header-link {
+    padding: 20px;
+    color: navy;
+}
+.olsis-link {
+    color: rgb(197, 154, 75);
+    padding: 30px;
+}

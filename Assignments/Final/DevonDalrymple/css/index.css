@@ -1,0 +1,13 @@
+/* Image Size for Cards */
+/* 180 188 */
+.card-img {
+    width: 180px;
+    height: 188px;
+    object-fit: cover;
+}
+
+.newFeed {
+    background-color: white;
+    width: 90%;
+    padding: 15px;
+}

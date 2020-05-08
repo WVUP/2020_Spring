@@ -1,0 +1,85 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="final.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Home</title>
+</head>
+<body>
+    <div class="container">
+        <div class = "row">
+            <nav class="nav flex-column" style="background-color: lightgrey;">
+                <a class="nav-link" id="SB" style="cursor: pointer;" onclick="expand()"><i class="fa fa-scribd fa-2x" aria-hidden="true" style="color: black;"></i></a>
+                <a class="nav-link" href="profile.html" id="profile"><i class="fa fa-user fa-2x" aria-hidden="true" style="color: black;"></i></a>
+                <a class="nav-link" href="home.html" id="home"><i class="fa fa-home fa-2x" aria-hidden="true" style="color: black;"></i></a>
+                <a class="nav-link" href="#" id="explore"><i class="fa fa-hashtag fa-2x" aria-hidden="true" style="color: black;"></i></a>
+                <a class="nav-link" href="#" id="shop"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true" style="color: black;"></i></a>
+                <a class="nav-link" href="#" id="adopt"><i class="fa fa-paw fa-2x" aria-hidden="true" style="color: black;"></i></a>
+                <a class="nav-link" href="mp3.html" id="music"><i class="fa fa-headphones fa-2x" aria-hidden="true" style="color: black;"></i></a>
+                <a class="nav-link" href="#" id="search"><i class="fa fa-search fa-2x" aria-hidden="true" style="color: black;"></i></a>
+            </nav>
+            <div class="col-lg">
+                <div class="row">
+                    <div class="col">
+                    <p class="post" style="padding-left: 5px;" id="postForm"><span style="font-weight: bold;">Home</span>
+                        <br>
+                        <input type="text" id="postTitle" placeholder="Title" required>
+                        <br>
+                        <textarea style="height: 40%; width: 75%;" id="postContent" required> </textarea>
+                        <i class="fa fa-picture-o fa-2x" aria-hidden="true" style="color: black;"></i>
+                        <i class="fa fa-shopping-cart fa-2x" aria-hidden="true" style="color: black;"></i>
+                        <i class="fa fa-paw fa-2x" aria-hidden="true" style="color: black;"></i>
+                        <i class="fa fa-headphones fa-2x" aria-hidden="true" style="color: black;"></i>
+                        <button style="margin-bottom: 10%" onclick="postIt()">Post!</button>
+                    </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <p class="post">
+                        <label for="post" id="poster" style="font-weight: bold;">current test</label>
+                        <label for="title" id="title" style="margin-left: 20%; font-weight: bold;">test me</label>
+                        <br>
+                        <img src="" alt="image here" style="margin-right: 10%; height: 50px;" id="image">
+                        <span id="description">description here</span> 
+                    </p>
+                </div>
+                <div class="row">
+                    <p class="post">
+                        <label for="post" id="poster" style="font-weight: bold;">current test</label>
+                        <label for="title" id="title" style="margin-left: 20%; font-weight: bold;">test me</label>
+                        <br>
+                        <img src="" alt="image here" style="margin-right: 10%; height: 50px;" id="image">
+                        <span id="description">description here</span> 
+                    </p>
+                </div>
+                <span id="new posts"></span>
+                <button onclick="generate()">generate posts</button>
+                <button onclick="populate()">populate posts</button>
+            </div>
+            <div class="col-2">
+                <div class="row">
+                    <p class="tag"><span class="post-fluid">#Tags</span>
+                        <br>
+                        #test
+                        <br>
+                        #debugging
+                    </p>
+                </div>
+                <div class="row">
+                    <p class="tag"><span class="post-fluid">Online</span>
+                    <br>
+                    No Friends Online
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+    <script src="final.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</html>
+

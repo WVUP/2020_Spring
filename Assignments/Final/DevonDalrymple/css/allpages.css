@@ -60,7 +60,7 @@
     border-radius: 10px 10px 10px 10px;
     -moz-border-radius: 10px 10px 10px 10px;
     -webkit-border-radius: 10px 10px 10px 10px;
-    border: 1px solid #000000;
+    border: 1px solid #090909;
     background-color: #007bff;
     margin-top: 5%;
     margin-bottom: 5%;
@@ -77,6 +77,8 @@
 
 .rightBox h1 {
     font-size: 64px;
+    padding-bottom: 10px;
+    border-bottom: 3px outset #090909;
 }
 
 /* Body Background  */
@@ -89,4 +91,15 @@ body {
     border-radius: 50%;
     width: 48px;
     height: 48px;
+}
+
+/* Displays the page title */
+.topBox {
+    width: 100%;
+    background-color: #fdfdfd;
+    border: 1px solid #090909;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
 }

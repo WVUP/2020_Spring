@@ -1,0 +1,74 @@
+#locator1{position: relative; visibility: visible;top: 0px; }
+#locator2{position: relative; visibility: visible;top: 50px;}
+#locator3{position: relative; visibility: visible;top: 100px;}
+#locator4{position: relative; visibility: visible;top: 150px;}
+#locator5{position: relative; visibility: visible;top: 200px;}
+#locator6{position: relative; visibility: visible;top: 250px;}
+#locator7{position: relative; visibility: visible;top: -380px; left: -5px; z-index: -1; text-shadow: 2px 2px;} 
+#locator8{position: relative; visibility: visible;top: -835px; left: 100px;}
+#locator9{position: relative; visibility: visible;top: -1035px; top: -500px; left: 100px; max-width: 1800px; min-height: 100px; outline: 2px black;}
+#locator10{position: relative; visibility: visible;top: auto; left: -200px; top: 30px;}
+#searchbar{position: absolute; visibility: visible;top: auto; left: -1100px; min-width: 1100px; top: -200px;}
+#navbarDropdown{position: absolute; visibility:visible;top: auto; left: 50px; top: -30px;}
+#locator11{position: absolute; visibility: visible;top: 0px; right: 0px;}
+#locator12{position: absolute; top: 200px; right: 50px; filter: drop-shadow(30px 10px 4px crimson) ;}
+#locator13{position: absolute;top: 200px; right: 400px;filter: drop-shadow(30px 10px 4px crimson)}
+#locator14{position: absolute;top: 625px; right: 50px;filter: drop-shadow(30px 10px 4px crimson)}
+#locator15{position: absolute;top: 625px; right: 400px;filter: drop-shadow(30px 10px 4px crimson)}
+#locator16{position: absolute; top: 0px; left: 200px;filter: drop-shadow(30px 10px 4px crimson)}
+#locator17{position: absolute; color: crimson; border-radius: 25px; right: 100px;}
+#carouselExampleIndicators{position: absolute; max-width: 800px; min-width: 800px; left: 250px; top: 150px; filter: drop-shadow(30px 10px 4px crimson) }
+#locator18{position: absolute; right: 50px; top: 150px;}
+#locator19{position: absolute;right: 300px;top: 0px;}
+#locator20{position: absolute; right: 305px;top: 0px;}
+#locator21{position: absolute; right: 310px;top: 0px;}
+#locator22{position: absolute; right: -920px;top: 450px;}
+#locator23{position: absolute; right: 300px; top: 0px;}
+#locator24{position: absolute; right: 305px;top: 0px;}
+#locator25{position: absolute;right: 310px;top: 0px;}
+#locator28{text-align: right;}
+#locator29{position: absolute; left: 950px; top: 0px;}
+#locator30{position: absolute; border-radius: 25px; right: 600px; top: 50px;}
+#locator31{text-align: center;}
+#locator32{position: absolute; top: 450px; right: 650px;}
+#caroselExampleIndicators2{position: absolute;top: 0px right 5px; max-width: 600; max-height: 600;}
+/* The sidebar menu */ 
+.sidenav {
+     /* Full-height: remove this if you want "auto" height */
+    width: auto; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color:crimson; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+    border-radius: 25px;
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: black;
+  }
+  
+  /* Style page content */
+  .main {
+    margin-left: 160px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  

@@ -3,6 +3,7 @@
    height: 100%;
 width: 90px; 
 position: fixed;
+z-index: 100;
 background-color: rgb(126, 129, 126); 
 }
 .spacer
@@ -43,6 +44,7 @@ font-family: Arial, Helvetica, sans-serif;
 overflow: hidden;
 float:top;
 position: fixed;
+z-index: 100;
 padding-left: 73.5%;
 background-color: rgb(126, 129, 126);
 }
@@ -115,6 +117,7 @@ border: 1px solid #ccc;
        background-color: #eeeeee;
        float: right;
        width: 90%;
+       z-index: 0;
        
    }
 

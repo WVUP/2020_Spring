@@ -31,7 +31,8 @@ function expand()
 profile = 
 {
 fname: "Final",
-lname: "Project"
+lname: "Project",
+profilePic: "https://www.sideshow.com/storage/product-images/904798/artorias-the-abysswalker_dark-souls_square.jpg"
 }
 
 post =
@@ -70,3 +71,27 @@ function generate()
 }
 
 document.getElementById("name").innerHTML = profile.fname + " " + profile.lname
+
+function postIt()
+{
+    document.getElementById("new posts").innerHTML +=
+    '<div class="row">' +
+    '<p class="post">' +
+        '<label for="post" id="profilePost" style="font-weight: bold;">current test</label>' +
+        '<label for="title" id="postedTitle" style="margin-left: 20%; font-weight: bold;">test me</label>' +
+        '<br>' +
+        '<img src="" alt="image here" style="margin-right: 10%; height: 50px;" id="profileImage">' +
+        '<span id="postDescription"></span>' + 
+    '</p>' +
+    '</div>'
+
+    document.getElementById("profilePost").innerHTML = profile.fname
+    document.getElementById("postedTitle").innerHTML = document.getElementById("postTitle").value
+    document.getElementById("profileImage").src = profile.profilePic
+    document.getElementById("postDescription").innerHTML = document.getElementById("postContent").value
+
+    document.getElementById("profilePost").id = "populated"
+    document.getElementById("postedTitle").id = "populated"
+    document.getElementById("profileImage").id = "populated"
+    document.getElementById("postDescription").id = "populated"
+}

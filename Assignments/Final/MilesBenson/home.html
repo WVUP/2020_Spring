@@ -23,13 +23,16 @@
             <div class="col-lg">
                 <div class="row">
                     <div class="col">
-                    <p class="post" style="padding-left: 5px;"><span style="font-weight: bold;">Home</span>
+                    <p class="post" style="padding-left: 5px;" id="postForm"><span style="font-weight: bold;">Home</span>
                         <br>
-                        <textarea style="height: auto; width: 75%;"> </textarea>
+                        <input type="text" id="postTitle" placeholder="Title" required>
+                        <br>
+                        <textarea style="height: 40%; width: 75%;" id="postContent" required> </textarea>
                         <i class="fa fa-picture-o fa-2x" aria-hidden="true" style="color: black;"></i>
                         <i class="fa fa-shopping-cart fa-2x" aria-hidden="true" style="color: black;"></i>
                         <i class="fa fa-paw fa-2x" aria-hidden="true" style="color: black;"></i>
                         <i class="fa fa-headphones fa-2x" aria-hidden="true" style="color: black;"></i>
+                        <button style="margin-bottom: 10%" onclick="postIt()">Post!</button>
                     </p>
                     </div>
                 </div>

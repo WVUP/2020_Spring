@@ -1,0 +1,19 @@
+.spacedCards {
+    margin: 12px;
+    display: none;
+}
+
+.list-group a {
+    font-size: 20px;
+    word-spacing: 3px;
+}
+
+.marketLink {
+    font-size: 32px;
+    text-decoration: none;
+    color: #111111;
+}
+
+.show {
+    display: inline;
+}

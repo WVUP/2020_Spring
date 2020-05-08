@@ -5,3 +5,9 @@
     height: 188px;
     object-fit: cover;
 }
+
+.newFeed {
+    background-color: white;
+    width: 90%;
+    padding: 15px;
+}

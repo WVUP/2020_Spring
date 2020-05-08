@@ -2,3 +2,16 @@
     max-width: 400px;
     max-height: 400px;
 }
+
+.bottomTags {
+    width: 102.5%;
+    background-color: white;
+    border: 1px groove #090909;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    list-style-type: none;
+    font-size: 20px;
+}

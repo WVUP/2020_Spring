@@ -2,126 +2,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
     <title>Document</title>
     <style>
-     .icon-bar {
-         float: left;
-        height: 100%;
-  width: 90px; 
-  position: fixed;
-  background-color: rgb(161, 159, 159); 
-}
-.spacer
-{
-    width: 100%;
-    height: 95px;
-}
-.main {
-  border: rgb(126, 129, 126);
-  border-style: solid;
-  height: 1000%;
-  width: 70px; 
-  float: right;
-  padding-right: 69%;
-  margin-top: 1%;
-  margin-right: 15%;
-  background-color: rgb(190, 8, 8); 
-}
-
-.icon-bar a {
-  display: block; 
-  text-align: center; 
-  padding: 16px; 
-  transition: all 0.3s ease; 
-  color: white; 
-  font-size: 36px;
-}
-
-.icon-bar a:hover {
-  background-color: #000; 
-}
-
-.active {
-  background-color: rgb(126, 129, 126); 
-}
-{box-sizing: border-box;}
-
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.topnav {
-  overflow: hidden;
-  float:top;
-  position: fixed;
-  padding-left: 73.5%;
-  background-color: rgb(126, 129, 126);
-}
-
-.topnav a {
-  float: left;
-  
-  display: block;
-  color: black;
-  text-align: center;
-  padding:  26px;
-  text-decoration: none;
-  font-size: 50px;
-}
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.topnav a.active {
-  background-color: #2196F3;
-  color: white;
-}
-
-.topnav .search-container {
-  float: right;
-}
-
-.topnav input[type=text] {
-  padding: 6px;
-  margin-top: 8px;
-  font-size: 17px;
-  border: none;
-}
-
-.topnav .search-container button {
-  float: right;
-  padding: 6px 10px;
-  margin-top: 8px;
-  margin-right: 8px;
-  background: #ddd;
-  font-size: 17px;
-  border: none;
-  cursor: pointer;
-}
-
-.topnav .search-container button:hover {
-  background: #ccc;
-}
-
-@media screen and (max-width: 600px) {
-  .topnav .search-container {
-    float: none;
-  }
-  .topnav a, .topnav input[type=text], .topnav .search-container button {
-    float: none;
-    display: block;
-    text-align: left;
-    width: 100%;
-    margin: 0;
-    padding: 14px;
-  }
-  .topnav input[type=text] {
-    border: 1px solid #ccc;  
-  }
-}
+     
     </style>
 </head>
 <body>
@@ -140,16 +30,250 @@ body {
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <div class="icon-bar">
-  <a class="active" href="#"><i class="fa fa-home"></i></a>
-  <a href="#"><i class="fa fa-hashtag"></i></a>
+  <a class="active" href="index.html"><i class="fa fa-home"></i></a>
+  <a href="hashtags.html"><i class="fa fa-hashtag"></i></a>
   <a href="#"><i class="fa fa-shopping-cart"></i></a>
   <a href="#"><i class="fa fa-paw"></i></a>
-  <a href="#"><i class="fa fa-music"></i></a>
+  <a href="mp3.html"><i class="fa fa-music"></i></a>
   <a href="#"><i class="fa fa-search"></i></a>
 </div>
 <div class="spacer"></div>
-<div class="main">
+
+<div class="bootstrapBody">
+    <div class="container" style="width: 75%; float: left;">
+  <h2>Feed</h2>
+  <div class="card" style="width: 75%;">
+    <div class="card-body" ><div class="card gedf-card" style="width: 100%">
+        <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="posts-tab" data-toggle="tab" href="#posts" role="tab" aria-controls="posts" aria-selected="true">Post</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="images-tab" data-toggle="tab" role="tab" aria-controls="images" aria-selected="false" href="#images">Images</a>
+                </li>
+            </ul>
+        </div>
+        <div class="card-body">
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="posts" role="tabpanel" aria-labelledby="posts-tab">
+                    <div class="form-group">
+                        <label class="sr-only" for="message">post</label>
+                        <textarea class="form-control" id="message" rows="3" placeholder="What are you thinking?"></textarea>
+                    </div>
+
+                </div>
+                <div class="tab-pane fade" id="images" role="tabpanel" aria-labelledby="images-tab">
+                    <div class="form-group">
+                        <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="customFile">
+                            <label class="custom-file-label" for="customFile">Upload image</label>
+                        </div>
+                    </div>
+                    <div class="py-4"></div>
+                </div>
+            </div>
+            <div class="btn-toolbar justify-content-between">
+                <div class="btn-group">
+                    <button type="submit" class="btn btn-primary">share</button>
+                </div>
+                <div class="btn-group">
+                    <button id="btnGroupDrop1" type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <i class="fa fa-globe"></i>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="btnGroupDrop1">
+                        <a class="dropdown-item" href="#"><i class="fa fa-globe"></i> Public</a>
+                        <a class="dropdown-item" href="#"><i class="fa fa-users"></i> Friends</a>
+                        <a class="dropdown-item" href="#"><i class="fa fa-user"></i> Just me</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+  </div>
+  <br>
+  <div class="card bg-primary text-white">
+    <div class="card-body"><div class="card gedf-card" style="width: 100%">
+        <div class="card-header">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="mr-2">
+                        <img class="rounded-circle" width="45" src="https://picsum.photos/50/50" alt="">
+                    </div>
+                    <div class="ml-2">
+                        <div class="h5 m-0">@JimmyJohn</div>
+                        <div class="h7 text-muted">Jim does it again</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="dropdown">
+                        <button class="btn btn-link dropdown-toggle" type="button" id="gedf-drop1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-ellipsis-h"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="gedf-drop1">
+                            <div class="h6 dropdown-header">Configuration</div>
+                            <a class="dropdown-item" href="#">Save</a>
+                            <a class="dropdown-item" href="#">Hide</a>
+                            <a class="dropdown-item" href="#">Report</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="card-body">
+            <div class="text-muted h7 mb-2" > <i class="fa fa-clock-o"></i>10 min ago</div>
+            <a class="card-link" href="#">
+                <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adip.</h5>
+            </a>
+
+            <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo recusandae nulla rem eos ipsa praesentium esse magnam nemo dolor
+                sequi fuga quia quaerat cum, obcaecati hic, molestias minima iste voluptates.
+            </p>
+        </div>
+        <div class="card-footer">
+            <a href="#" class="card-link" ><i onclick="myFunction(this)" class="fa fa-thumbs-up"></i> Like</a>
+            <a href="#" class="card-link"><i class="fa fa-comment"></i> Comment</a>
+            <a href="#" class="card-link"><i class="fa fa-mail-forward"></i> Share</a>
+        </div>
+    </div></div>
+  </div>
+  <br>
+  <div class="card bg-success text-white">
+    <div class="card-body"><div class="card gedf-card"style="width: 100%">
+        <div class="card-header">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="mr-2">
+                        <img class="rounded-circle" width="45" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcThZ8xs38cVs89Zfml1HpJKvgp40b1ss1oRAagUEX_wOD_xgH6Y&usqp=CAU" alt="">
+                    </div>
+                    <div class="ml-2">
+                        <div class="h5 m-0">@PatriotsFanBase</div>
+                        <div class="h7 text-muted">Pats4Life</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="dropdown">
+                        <button class="btn btn-link dropdown-toggle" type="button" id="gedf-drop1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-ellipsis-h"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="gedf-drop1">
+                            <div class="h6 dropdown-header">Configuration</div>
+                            <a class="dropdown-item" href="#">Save</a>
+                            <a class="dropdown-item" href="#">Hide</a>
+                            <a class="dropdown-item" href="#">Report</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="card-body">
+            <div class="text-muted h7 mb-2"> <i class="fa fa-clock-o"></i> 10 min ago</div>
+            <a class="card-link" href="#">
+                <h5 class="card-title"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit consectetur
+                    deserunt illo esse distinctio.</h5>
+            </a>
+
+            <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam omnis nihil, aliquam est, voluptates officiis iure soluta
+                alias vel odit, placeat reiciendis ut libero! Quas aliquid natus cumque quae repellendus. Lorem
+                ipsum dolor sit amet consectetur adipisicing elit. Ipsa, excepturi. Doloremque, reprehenderit!
+                Quos in maiores, soluta doloremque molestiae reiciendis libero expedita assumenda fuga quae.
+                Consectetur id molestias itaque facere? Hic!
+            </p>
+            
+        </div>
+        <div class="card-footer">
+            <a href="#" class="card-link"><i onclick="myFunction(this)" class="fa fa-thumbs-up"></i> Like</a>
+            <a href="#" class="card-link"><i class="fa fa-comment"></i> Comment</a>
+            <a href="#" class="card-link"><i class="fa fa-mail-forward"></i> Share</a>
+        </div>
+    </div></div>
+  </div>
+  <br>
+  <div class="card bg-info text-white" style="position: ;">
+    <div class="card-body"> <div class="card gedf-card"style="width: 100%">
+        <div class="card-header">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="mr-2">
+                        <img class="rounded-circle" width="45" src="data:image/jpeg;base64,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" alt="">
+                    </div>
+                    <div class="ml-2">
+                        <div class="h5 m-0">@RuskiBlet</div>
+                        <div class="h7 text-muted">Morzs</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="dropdown">
+                        <button class="btn btn-link dropdown-toggle" type="button" id="gedf-drop1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-ellipsis-h"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="gedf-drop1">
+                            <div class="h6 dropdown-header">Configuration</div>
+                            <a class="dropdown-item" href="#">Save</a>
+                            <a class="dropdown-item" href="#">Hide</a>
+                            <a class="dropdown-item" href="#">Report</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="card-body">
+            <div class="text-muted h7 mb-2"> <i class="fa fa-clock-o"></i> Hace 40 min</div>
+            <a class="card-link" href="#">
+                <h5 class="card-title">Totam non adipisci hic! Possimus ducimus amet, dolores illo ipsum quos
+                    cum.</h5>
+            </a>
+
+            <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam sunt fugit reprehenderit consectetur exercitationem odio,
+                quam nobis? Officiis, similique, harum voluptate, facilis voluptas pariatur dolorum tempora sapiente
+                eius maxime quaerat.
+                
+            </p>
+        </div>
+        <div class="card-footer">
+            <a href="#" class="card-link"><i onclick="myFunction(this)" class="fa fa-thumbs-up"></i> Like</a>
+            <a href="#" class="card-link"><i class="fa fa-comment"></i> Comment</a>
+            <a href="#" class="card-link"><i class="fa fa-mail-forward"></i> Share</a>
+        </div>
+    </div></div>
+  </div>
+  
+    </div>
+<div class="container1" style="float: right; width: 20%; padding-top: 5%;">
     
+        <div class="card gedf-card">
+            <div class="card-body">
+                <h5 class="card-title">Trending Hashtags</h5>
+                
+                <p class="card-text">#RuskiPacany</p>
+                <p class="card-text">#Vodka</p>
+                <p class="card-text">#Corona</p>
+             
+            </div>
+        </div>
+        <div class="card gedf-card">
+                <div class="card-body">
+                    <h5 class="card-title">Online People</h5>
+                    
+                    <p class="card-text">- James Bond</p>
+                    <p class="card-text">- Vlad Putin</p>
+                    <p class="card-text">-Kasiaciokas</p>
+                    
+                </div>
+            
+
+        </div>
+        
+    </div>
+
 </div>
 
 </body>

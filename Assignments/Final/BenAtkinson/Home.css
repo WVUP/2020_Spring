@@ -187,3 +187,51 @@ text-align: center;
 
 
 }
+
+.container3{
+  left: 1.in;
+  top: 3in;
+  position: absolute;
+width: 1350px;
+height: 250px;
+
+background: #FFFFFF;
+border: 1px solid rgba(0, 0, 0, 0.5);
+box-sizing: border-box;
+}
+
+.container4{
+  left: 1.5in;
+  top: 4in;
+  position: absolute;
+width: 1350px;
+height: 250px;
+
+background: #FFFFFF;
+border: 1px solid rgba(0, 0, 0, 0.5);
+box-sizing: border-box;
+}
+
+
+
+.container5{
+  left: 1.5in;
+  top: 1in;
+  position: absolute;
+width: 1350px;
+height: 250px;
+
+background: #FFFFFF;
+border: 1px solid rgba(0, 0, 0, 0.5);
+box-sizing: border-box;
+}
+
+.postButton {
+  background-color: #4CAF50; 
+  border: none;
+  padding: 15px 32px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}

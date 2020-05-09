@@ -188,3 +188,14 @@
   
   
   }
+
+  .container3{
+    top: 1in;
+    position: absolute;
+  width: 1350px;
+  height: 250px;
+  
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  }

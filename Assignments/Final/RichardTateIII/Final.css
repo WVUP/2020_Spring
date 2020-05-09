@@ -1,0 +1,79 @@
+.header{
+    position: relative;
+    left: 100px;
+    margin-right: 400px;
+    border: 3px solid black;
+    font-size: xx-large;
+    font-weight: bolder;
+
+}
+
+.leftBar{
+    flex-direction: column;
+    border: 3px solid black;
+    position: absolute;
+    left: 1em;
+    top: 0;
+}
+
+.tags{
+    flex-direction: column;
+    border: 3px solid black;
+    position: absolute;
+    right: 1.5em;
+    top: 0;
+    border-radius: 1em;
+    text-align: center;
+}
+
+.people{
+    flex-direction: column;
+    border: 3px solid black;
+    position: absolute;
+    right: 1.5em;
+    top: 27em;
+    border-radius: 1em;
+    text-align: center;
+}
+
+.images{
+    flex-direction: row;
+    position: absolute;
+    right: 50em;
+    top: 1em;
+    border-radius: 1em;
+}
+
+.bottom{
+    position: absolute;
+    width: 70em;
+    right: 30em;
+    top: 30em;
+    border-radius: 1em;
+    border: 3px solid black;
+}
+
+.info{
+    position: absolute;
+    width: 70em;
+    right: 30em;
+    top: 1em;
+    border-radius: 1em;
+    border: 3px solid black;
+}
+
+.feed{
+    position: absolute;
+    width: 70em;
+    right: 30em;
+    top: 1em;
+    border-radius: 1em;
+    border: 3px solid black;
+}
+
+.feedPara{
+    position: absolute;
+    width: 70em;
+    right: 20em;
+    top: 1em;
+}

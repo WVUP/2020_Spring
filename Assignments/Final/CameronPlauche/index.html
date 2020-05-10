@@ -10,37 +10,84 @@
     <link rel="stylesheet" href="../CameronPlauche/styles.css">
 </head>
 <body>
-    <div class="sidenav">
-        <a href="#">Home</a>
-        <br>
-        <a href="#">Trending</a>
-        <br>
-        <a href="#">Market</a>
-        <br>
-        <a href="#">Adoption</a>
-        <br>
-        <a href="#">Music</a>
-        <br>
-        <a href="#">Search</a>
-      </div>
-      <div class="sidenavRight">
-        <a href="#">#Tags</a>
-        <br>
-        <a href="#">#Music</a>
-        <a href="#">#Adoption</a>
-        <a href="#">#Gaming</a>
-        <a href="#">#WebDesign</a>
-        <a href="#">#College</a>
-        <br>
-        <br>
-        <a href="#">Online</a>
-        <br>
-        <a href="#">Nick</a>
-        <a href="#">Matt</a>
-        <a href="#">Tiffany</a>
-        <a href="#">Marina</a>
-        <a href="#">Destiny</a>
-      </div>
+    
+    <div class="container">
+        <div class ="row">
+            <!-- Left sidenav -->
+            <div class="col-2">
+                <div class="sidenav">
+                    <a href="#">Home</a>
+                    <br>
+                    <a href="#">Trending</a>
+                    <br>
+                    <a href="#">Market</a>
+                    <br>
+                    <a href="#">Adoption</a>
+                    <br>
+                    <a href="#">Music</a>
+                    <br>
+                    <a href="#">Search</a>
+                  </div>
+            </div>
+            <!-- Submit Post -->
+            <div class="col-8">
+                <h2>Submit Post</h2>
+                <form action="" methods="">
+                    <div class="form-group">
+                        <label for="title">Title</label>
+                        <input type="title" class="form-control" id="title"/>
+        
+                    </div>
+                    <div class="form-group">
+                        <label for="body">Body</label>
+                        <input type="body" class="form-control" id="body"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="file-upload">Image Upload</label>
+                        <br>
+                        <input type="file" id="file-upload"/>
+                        <input type="submit" class="btn btn-default" id="submit" value="Submit"/>
+                    </div>
+                </form>
+                <div class="card flew-row flex-wrap">
+                    <div class="card=header border-0">
+                        <img src="" alt="">
+                    </div>
+                    <div class="card-block px-2">
+                        <h4 class="card-title">Title</h4>
+                        <p class="card-text">Description</p>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Right sidenav -->
+            <div class="col-2">
+                <div class="sidenavRight">
+                    <a href="#">#Tags</a>
+                    <br>
+                    <a href="#">#Music</a>
+                    <a href="#">#Adoption</a>
+                    <a href="#">#Gaming</a>
+                    <a href="#">#WebDesign</a>
+                    <a href="#">#College</a>
+                    <br>
+                    <br>
+                    <a href="#">Online</a>
+                    <br>
+                    <a href="#">Nick</a>
+                    <a href="#">Matt</a>
+                    <a href="#">Tiffany</a>
+                    <a href="#">Marina</a>
+                    <a href="#">Destiny</a>
+                  </div>
+            </div>
+        </div>
+        <div class="row">
+
+        </div>
+    </div>
+
+
 
 
 </body>
